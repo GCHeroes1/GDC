@@ -1,0 +1,271 @@
+{
+  "_mapping": {
+    "annotations.annotation_autocomplete": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "annotation_autocomplete",
+      "full": "annotations.annotation_autocomplete",
+      "type": "id"
+    },
+    "annotations.annotation_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "annotation_id",
+      "full": "annotations.annotation_id",
+      "type": "keyword"
+    },
+    "annotations.case_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "case_id",
+      "full": "annotations.case_id",
+      "type": "keyword"
+    },
+    "annotations.case_submitter_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "case_submitter_id",
+      "full": "annotations.case_submitter_id",
+      "type": "keyword"
+    },
+    "annotations.category": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "category",
+      "full": "annotations.category",
+      "type": "keyword"
+    },
+    "annotations.classification": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "classification",
+      "full": "annotations.classification",
+      "type": "keyword"
+    },
+    "annotations.created_datetime": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "created_datetime",
+      "full": "annotations.created_datetime",
+      "type": "keyword"
+    },
+    "annotations.entity_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "entity_id",
+      "full": "annotations.entity_id",
+      "type": "keyword"
+    },
+    "annotations.entity_submitter_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "entity_submitter_id",
+      "full": "annotations.entity_submitter_id",
+      "type": "keyword"
+    },
+    "annotations.entity_type": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "entity_type",
+      "full": "annotations.entity_type",
+      "type": "keyword"
+    },
+    "annotations.legacy_created_datetime": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "legacy_created_datetime",
+      "full": "annotations.legacy_created_datetime",
+      "type": "keyword"
+    },
+    "annotations.legacy_updated_datetime": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "legacy_updated_datetime",
+      "full": "annotations.legacy_updated_datetime",
+      "type": "keyword"
+    },
+    "annotations.notes": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "notes",
+      "full": "annotations.notes",
+      "type": "keyword"
+    },
+    "annotations.project.code": {
+      "description": "Project code",
+      "doc_type": "annotations",
+      "field": "project.code",
+      "full": "annotations.project.code",
+      "type": "keyword"
+    },
+    "annotations.project.dbgap_accession_number": {
+      "description": "The dbgap accession number for the project.",
+      "doc_type": "annotations",
+      "field": "project.dbgap_accession_number",
+      "full": "annotations.project.dbgap_accession_number",
+      "type": "keyword"
+    },
+    "annotations.project.disease_type": {
+      "description": "Full name for the project",
+      "doc_type": "annotations",
+      "field": "project.disease_type",
+      "full": "annotations.project.disease_type",
+      "type": "keyword"
+    },
+    "annotations.project.intended_release_date": {
+      "description": "Tracks a Project's intended release date.",
+      "doc_type": "annotations",
+      "field": "project.intended_release_date",
+      "full": "annotations.project.intended_release_date",
+      "type": "keyword"
+    },
+    "annotations.project.name": {
+      "description": "Display name for the project",
+      "doc_type": "annotations",
+      "field": "project.name",
+      "full": "annotations.project.name",
+      "type": "keyword"
+    },
+    "annotations.project.primary_site": {
+      "description": "Primary site for the project",
+      "doc_type": "annotations",
+      "field": "project.primary_site",
+      "full": "annotations.project.primary_site",
+      "type": "keyword"
+    },
+    "annotations.project.program.dbgap_accession_number": {
+      "description": "The dbgap accession number provided for the program.",
+      "doc_type": "annotations",
+      "field": "project.program.dbgap_accession_number",
+      "full": "annotations.project.program.dbgap_accession_number",
+      "type": "keyword"
+    },
+    "annotations.project.program.name": {
+      "description": "Full name/title of the program.",
+      "doc_type": "annotations",
+      "field": "project.program.name",
+      "full": "annotations.project.program.name",
+      "type": "keyword"
+    },
+    "annotations.project.program.program_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "project.program.program_id",
+      "full": "annotations.project.program.program_id",
+      "type": "keyword"
+    },
+    "annotations.project.project_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "project.project_id",
+      "full": "annotations.project.project_id",
+      "type": "keyword"
+    },
+    "annotations.project.releasable": {
+      "description": "A project can only be released by the user when `releasable` is true.",
+      "doc_type": "annotations",
+      "field": "project.releasable",
+      "full": "annotations.project.releasable",
+      "type": "keyword"
+    },
+    "annotations.project.released": {
+      "description": "To release a project is to tell the GDC to include all submitted entities in the next GDC index.",
+      "doc_type": "annotations",
+      "field": "project.released",
+      "full": "annotations.project.released",
+      "type": "keyword"
+    },
+    "annotations.project.state": {
+      "description": "The possible states a project can be in.  All but `open` are equivalent to some type of locked state.",
+      "doc_type": "annotations",
+      "field": "project.state",
+      "full": "annotations.project.state",
+      "type": "keyword"
+    },
+    "annotations.state": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "state",
+      "full": "annotations.state",
+      "type": "keyword"
+    },
+    "annotations.status": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "status",
+      "full": "annotations.status",
+      "type": "keyword"
+    },
+    "annotations.submitter_id": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "submitter_id",
+      "full": "annotations.submitter_id",
+      "type": "keyword"
+    },
+    "annotations.updated_datetime": {
+      "description": "",
+      "doc_type": "annotations",
+      "field": "updated_datetime",
+      "full": "annotations.updated_datetime",
+      "type": "keyword"
+    }
+  },
+  "defaults": [
+    "case_submitter_id",
+    "case_id",
+    "state",
+    "entity_id",
+    "created_datetime",
+    "category",
+    "submitter_id",
+    "classification",
+    "annotation_id",
+    "annotation_autocomplete",
+    "legacy_created_datetime",
+    "notes",
+    "status",
+    "entity_type",
+    "updated_datetime",
+    "legacy_updated_datetime",
+    "entity_submitter_id"
+  ],
+  "expand": [
+    "project",
+    "project.program"
+  ],
+  "fields": [
+    "case_submitter_id",
+    "case_id",
+    "state",
+    "entity_id",
+    "created_datetime",
+    "category",
+    "submitter_id",
+    "classification",
+    "annotation_id",
+    "annotation_autocomplete",
+    "legacy_created_datetime",
+    "notes",
+    "status",
+    "entity_type",
+    "updated_datetime",
+    "legacy_updated_datetime",
+    "entity_submitter_id",
+    "project.project_id",
+    "project.code",
+    "project.intended_release_date",
+    "project.name",
+    "project.program.program_id",
+    "project.program.name",
+    "project.program.dbgap_accession_number",
+    "project.releasable",
+    "project.disease_type",
+    "project.state",
+    "project.primary_site",
+    "project.released",
+    "project.dbgap_accession_number"
+  ],
+  "multi": [],
+  "nested": []
+}

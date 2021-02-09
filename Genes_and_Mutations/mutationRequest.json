@@ -1,0 +1,26 @@
+{
+    "query": "query ExploreCasesSsmsAggregations_relayQuery(\n  $ssmCountsfilters: FiltersArgument\n) {\n  ssmsAggregationsViewer: viewer {\n    explore {\n      ssms {\n        aggregations(filters: $ssmCountsfilters, aggregations_filter_themselves: true) {\n          occurrence__case__case_id {\n            buckets {\n              key\n              doc_count\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+    "variables": {
+      "ssmCountsfilters": {
+        "content": [
+          {
+            "op": "in",
+            "content": {
+              "field": "cases.primary_site",
+              "value": [
+                "skin"
+              ]
+            }
+          },
+          {
+            "op": "in",
+            "content": {
+              "field": "occurrence.case.case_id",
+              "value": []
+            }
+          }
+        ],
+        "op": "and"
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+{
+    "query": "query ExploreCasesTable_relayQuery(\n  $filters: FiltersArgument\n  $cases_size: Int\n  $cases_offset: Int\n  $cases_score: String\n  $cases_sort: [Sort]\n) {\n  exploreCasesTableViewer: viewer {\n    explore {\n      cases {\n        hits(first: $cases_size, offset: $cases_offset, filters: $filters, score: $cases_score, sort: $cases_sort) {\n          total\n          edges {\n            node {\n              score\n              id\n              case_id\n              primary_site\n              disease_type\n              submitter_id\n              project {\n                project_id\n                program {\n                  name\n                }\n                id\n              }\n              diagnoses {\n                hits(first: 1) {\n                  edges {\n                    node {\n                      primary_diagnosis\n                      age_at_diagnosis\n                      id\n                    }\n                  }\n                }\n              }\n              demographic {\n                gender\n                ethnicity\n                race\n                days_to_death\n                vital_status\n              }\n              summary {\n                data_categories {\n                  file_count\n                  data_category\n                }\n                experimental_strategies {\n                  experimental_strategy\n                  file_count\n                }\n                file_count\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+    "variables": {
+      "filters": {
+        "op": "and",
+        "content": [
+          {
+            "op": "in",
+            "content": {
+              "field": "cases.primary_site",
+              "value": [
+                "skin"
+              ]
+            }
+          }
+        ]
+      },
+      "cases_size": 100,
+      "cases_offset": 0,
+      "cases_score": "gene.gene_id",
+      "cases_sort": []
+    }
+  }

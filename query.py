@@ -107,6 +107,13 @@ CASE_FILTERS = {
             }
         },
         {
+            'op': 'in',
+            'content': {
+                'field': 'diagnoses.primary_diagnosis',
+                'value': ['Malignant melanoma, NOS']
+            }
+        },
+        {
             'op': 'not',
             'content':{
                 'field': 'slide_ids'

@@ -9,6 +9,7 @@ import requests
 
 import numpy as np
 import pandas as pd
+import statistics
 
 
 
@@ -20,13 +21,13 @@ CASE_FIELDS = [
     'primary_site',
     'disease_type',
     'diagnoses.primary_diagnosis',
-    
+
     'diagnoses.age_at_diagnosis',
     'diagnoses.days_to_diagnosis',
     'diagnoses.year_of_diagnosis',
-    
+
     'diagnoses.annotations.annotation_id',
-    
+
     'diagnoses.classification_of_tumor',
     'diagnoses.cog_renal_stage',
     'diagnoses.laterality',
@@ -41,7 +42,7 @@ CASE_FIELDS = [
     'diagnoses.sites_of_involvement',
     'diagnoses.tissue_or_organ_of_origin',
     'diagnoses.tumor_stage',
-    
+
     'demographic.vital_status',
     'demographic.cause_of_death',
     'demographic.days_to_death',
@@ -50,17 +51,17 @@ CASE_FIELDS = [
     'demographic.ethnicity',
     'demographic.gender',
     'demographic.race',
-    
+
     'slide_ids',
 
     'annotations.annotation_id',
     'annotations.category',
     'annotations.classification',
     'annotations.notes',
-        
+
     'state'
 ]
-    
+
 FILE_FIELDS = [
     'file_id',
 
@@ -74,10 +75,10 @@ FILE_FIELDS = [
 
     'access',
     'state',
-    
+
     'imaging_date',
     'magnification',
-    
+
     'annotations.annotation_id',
     'annotations.category',
     'annotations.classification',
@@ -165,16 +166,14 @@ CASE_FILTERS = {
 #       ],
 #     }
 
-
-
 def process_args():
     ap = argparse.ArgumentParser(description='Get metadata from the GDC.')
     ap.add_argument('-C', '--cases', help='existing JSON file of case query results', default=None)
     ap.add_argument('-O', '--cases_out', help='file to save case query results to', default=None)
-    
+
     ap.add_argument('-N', '--num_cases', help='maximum number of cases to query for', default=50)
     ap.add_argument('-p', '--primary', help='primary site of the case', default='Skin')
-    
+
     ap.add_argument('-x', '--no_files', help='exit without querying slide files', action='store_true')
     ap.add_argument('-n', '--num_slides', help='maximum number of slides to query for', default=None)
     ap.add_argument('-o', '--slides_out', help='file to save slide query results to', default='slides_out.json')
@@ -188,23 +187,23 @@ def get_cases(args):
             return json.load(f)
     else:
         CASE_FILTERS['content'][0]['content']['value'] = [args.primary]
-        
+
         params = {
             'filters' : json.dumps(CASE_FILTERS),
             'fields' : ','.join(CASE_FIELDS),
             'format' : 'JSON',
             'size' : args.num_cases
         }
-        
+
         response = requests.get(CASES_ENDPOINT, params=params)
-        
+
         return json.loads(response.content.decode('utf8'))
 
 def slide_to_files(slide_id):
     filter = {
         'op' : 'and',
         'content' : [
-            { 
+            {
                 'op' : '=',
                 'content' : {
                     'field' : 'cases.samples.portions.slides.slide_id',
@@ -212,7 +211,7 @@ def slide_to_files(slide_id):
                 }
             },
 
-            { 
+            {
                 'op' : '=',
                 'content' : {
                     'field' : 'data_format',
@@ -222,56 +221,97 @@ def slide_to_files(slide_id):
         ]
     }
 
-    
+
     params = {
         'filters' : json.dumps(filter),
         'fields' : ','.join(FILE_FIELDS),
         'format' : 'JSON',
         'size' : 100
     }
-    
-    response = requests.get(FILES_ENDPOINT, params=params)
-    
-    return json.loads(response.content.decode('utf8'))    
-    
 
-    
+    response = requests.get(FILES_ENDPOINT, params=params)
+
+    return json.loads(response.content.decode('utf8'))
+
+
+
 if __name__ == '__main__':
     args = process_args()
-    
+
     cases = get_cases(args)
     if args.cases_out:
         with open(args.cases_out, 'w') as f:
             print(json.dumps(cases, indent=2), file=f)
-    
+
     if cases['warnings']:
         print('NB: warnings returned:')
         print(cases['warnings'])
-    
+
     print('%i cases returned' % len(cases['data']['hits']))
-    
+
     all_slides = []
     for hit in cases['data']['hits']:
         all_slides += hit['slide_ids']
-    
+
     print('%i total slides' % len(all_slides))
-    
+
     if args.no_files:
         print('exiting without query slide files')
         sys.exit(0)
-    
+
     print('querying slide files')
-    
+
     for hit in cases['data']['hits']:
         print('#', end='', flush=True)
         slides = {}
         for slide in hit['slide_ids']:
             print('.', end='', flush=True)
             slides[slide] = slide_to_files(slide)['data']['hits']
-        
+
         hit['slides'] = slides
-    
+
     print()
-    
-    with open(args.slides_out, 'w') as f:
+    outputFile = args.slides_out
+    with open(outputFile, 'w') as f:
         print(json.dumps(cases, indent=2), file=f)
+
+    f = open(outputFile,)
+    output = json.load(f)
+
+    alive = 0
+    dead = 0
+    numberOfSlides = 0
+    agesAtDiagnosis = []
+    timeTillDeath = []
+    # dict_data = {}
+
+    for i in range(0, len(output["data"]["hits"])):
+        if "slide_ids" in output["data"]["hits"][i]:
+            numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
+        if "demographic" in output["data"]["hits"][i]:
+            if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
+                alive+=1
+            else:
+                dead+=1
+            if "days_to_death" in output["data"]["hits"][i]["demographic"]:
+                if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
+                    timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
+        if "diagnoses" in output["data"]["hits"][i]:
+            if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
+                if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
+                    # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
+                    agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
+
+# i need a new dictionary of the patient ID, slide ID's for them, and then whatever information the slide ID's have
+#     dict_data = {}
+
+    print("Alive: " + str(alive) + ", Dead: " + str(dead))
+    print("Median age is: " + str(statistics.median(agesAtDiagnosis)))
+    q3, q1 = np.percentile(agesAtDiagnosis, [75, 25])
+    iqr = q3 - q1
+    print("IQR age is: " + str(iqr))
+    print("Median age till death is: " + str(statistics.median(timeTillDeath)))
+    # print(agesAtDiagnosis)
+    # print(timeTillDeath)
+
+    f.close()

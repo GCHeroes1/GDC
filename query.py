@@ -54,6 +54,22 @@ CASE_FIELDS = [
 
     'slide_ids',
 
+    'samples.portions.slides.section_location',
+    'samples.portions.slides.slide_id',
+    'samples.portions.slides.submitter_id',
+    'samples.portions.slides.number_proliferating_cells',
+    'samples.portions.slides.percent_eosinophil_infiltration',
+    'samples.portions.slides.percent_granulocyte_infiltration',
+    'samples.portions.slides.percent_inflam_infiltration',
+    'samples.portions.slides.percent_lymphocyte_infiltration',
+    'samples.portions.slides.percent_monocyte_infiltration',
+    'samples.portions.slides.percent_necrosis',
+    'samples.portions.slides.percent_neutrophil_infiltration',
+    'samples.portions.slides.percent_normal_cells',
+    'samples.portions.slides.percent_stromal_cells',
+    'samples.portions.slides.percent_tumor_cells',
+    'samples.portions.slides.percent_tumor_nuclei',
+
     'annotations.annotation_id',
     'annotations.category',
     'annotations.classification',
@@ -283,35 +299,96 @@ if __name__ == '__main__':
     numberOfSlides = 0
     agesAtDiagnosis = []
     timeTillDeath = []
-    # dict_data = {}
+    dict_data = {"data":[]}
+    mutation_genes_data = {"case_ids":[]}
 
     for i in range(0, len(output["data"]["hits"])):
+        patient = {}
+        patient["patient_id"] = output["data"]["hits"][i]["id"]
         if "slide_ids" in output["data"]["hits"][i]:
             numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
+            for slide_ids in output["data"]["hits"][i]["slide_ids"]:
+                mutation_genes_data["case_ids"].append(slide_ids)
+            # patient["slide_ids"] = output["data"]["hits"][i]["slide_ids"]
         if "demographic" in output["data"]["hits"][i]:
             if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
                 alive+=1
+                patient["vital_status"] = "Alive"
             else:
                 dead+=1
+                patient["vital_status"] = "Dead"
             if "days_to_death" in output["data"]["hits"][i]["demographic"]:
                 if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
                     timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
+                    patient["days_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
         if "diagnoses" in output["data"]["hits"][i]:
             if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
                 if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
                     # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
                     agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
+        for data in output["data"]["hits"][i]["samples"]:
+            # print(data["portions"][0]["slides"])
+            sample = data["portions"][0]["slides"][0]
+            patient["slides"] = {}
+            patient["slides"]["slide_id"] = sample["slide_id"]
+            if "percent_stromal_cells" in sample:
+                patient["slides"]["percent_stromal_cells"] = sample["percent_stromal_cells"]
+            if "section_location" in sample:
+                patient["slides"]["section_location"] = sample["section_location"]
+            if "percent_tumor_cells" in sample:
+                patient["slides"]["percent_tumor_cells"] = sample["percent_tumor_cells"]
+            if "number_proliferating_cells" in sample:
+                patient["slides"]["number_proliferating_cells"] = sample["number_proliferating_cells"]
+            if "percent_eosinophil_infiltration" in sample:
+                patient["slides"]["percent_eosinophil_infiltration"] = sample["percent_eosinophil_infiltration"]
+            if "percent_inflam_infiltration" in sample:
+                patient["slides"]["percent_inflam_infiltration"] = sample["percent_inflam_infiltration"]
+            if "percent_neutrophil_infiltration" in sample:
+                patient["slides"]["percent_neutrophil_infiltration"] = sample["percent_neutrophil_infiltration"]
+            if "percent_lymphocyte_infiltration" in sample:
+                patient["slides"]["percent_lymphocyte_infiltration"] = sample["percent_lymphocyte_infiltration"]
+            if "percent_granulocyte_infiltration" in sample:
+                patient["slides"]["percent_granulocyte_infiltration"] = sample["percent_granulocyte_infiltration"]
+            if "percent_necrosis" in sample:
+                patient["slides"]["percent_necrosis"] = sample["percent_necrosis"]
+            if "percent_normal_cells" in sample:
+                patient["slides"]["percent_normal_cells"] = sample["percent_normal_cells"]
+            if "percent_monocyte_infiltration" in sample:
+                patient["slides"]["percent_monocyte_infiltration"] = sample["percent_monocyte_infiltration"]
+            if "percent_tumor_nuclei" in sample:
+                patient["slides"]["percent_tumor_nuclei"] = sample["percent_tumor_nuclei"]
+            if "submitter_id" in sample:
+                patient["slides"]["submitter_id"] = sample["submitter_id"]
+            codes = (sample["submitter_id"]).split("-", )
+            if codes[0] == "TCGA":
+                patient["slides"]["SampleCode"] = (codes[3][0:2])
+        dict_data["data"].append(patient)
 
 # i need a new dictionary of the patient ID, slide ID's for them, and then whatever information the slide ID's have
 #     dict_data = {}
+    if len(agesAtDiagnosis) > 0:
+        print("Alive: " + str(alive) + ", Dead: " + str(dead))
+        print("Median age is: " + str(statistics.median(agesAtDiagnosis)))
+        q3, q1 = np.percentile(agesAtDiagnosis, [75, 25])
+        iqr = q3 - q1
+        print("IQR age is: " + str(iqr))
+    if len(timeTillDeath) > 0:
+        print("Median age till death is: " + str(statistics.median(timeTillDeath)))
+    # print(dict_data)
+    # print(main_data)
+    print(mutation_genes_data)
 
-    print("Alive: " + str(alive) + ", Dead: " + str(dead))
-    print("Median age is: " + str(statistics.median(agesAtDiagnosis)))
-    q3, q1 = np.percentile(agesAtDiagnosis, [75, 25])
-    iqr = q3 - q1
-    print("IQR age is: " + str(iqr))
-    print("Median age till death is: " + str(statistics.median(timeTillDeath)))
-    # print(agesAtDiagnosis)
-    # print(timeTillDeath)
+    # new = open("newData.json", )
+
+    with open("newData.json", 'w') as new_:
+        print(json.dumps(dict_data, indent=2), file=new_)
+
+    # case_ids = open("case_ids.json", 'w')
+
+    with open("case_ids.json", 'w') as case_ids_:
+        print(json.dumps(mutation_genes_data, indent=2), file=case_ids_)
+
 
     f.close()
+    new_.close()
+    case_ids_.close()

@@ -18,6 +18,7 @@ CASE_FIELDS = [
     'case_id',
     'consent_type',
 
+    'project.program.name',
     'primary_site',
     'disease_type',
     'diagnoses.primary_diagnosis',
@@ -117,6 +118,13 @@ CASE_FILTERS = {
             }
         },
         {
+            'op': 'in',
+            'content': {
+                'field': 'project.program.name',
+                'value': "TCGA"
+            }
+        },
+        {
             'op': '!=',
             'content': {
                 'field': 'demographic.vital_status',
@@ -193,6 +201,7 @@ def process_args():
     ap.add_argument('-x', '--no_files', help='exit without querying slide files', action='store_true')
     ap.add_argument('-n', '--num_slides', help='maximum number of slides to query for', default=None)
     ap.add_argument('-o', '--slides_out', help='file to save slide query results to', default='slides_out.json')
+    ap.add_argument('-s', '--slides_in', help='file containing slide query results', default=None)
 
     return ap.parse_args()
 
@@ -226,7 +235,6 @@ def slide_to_files(slide_id):
                     'value' : slide_id
                 }
             },
-
             {
                 'op' : '=',
                 'content' : {
@@ -253,6 +261,7 @@ def slide_to_files(slide_id):
 
 if __name__ == '__main__':
     args = process_args()
+    # print(args)
 
     cases = get_cases(args)
     if args.cases_out:
@@ -302,14 +311,13 @@ if __name__ == '__main__':
     dict_data = {"data":[]}
     mutation_genes_data = {"case_ids":[]}
 
-    for i in range(0, len(output["data"]["hits"])):
+    for i in range(0, len(output["data"]["hits"])):                                                                     # constructing json
         patient = {}
         patient["patient_id"] = output["data"]["hits"][i]["id"]
         if "slide_ids" in output["data"]["hits"][i]:
             numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
             for slide_ids in output["data"]["hits"][i]["slide_ids"]:
                 mutation_genes_data["case_ids"].append(slide_ids)
-            # patient["slide_ids"] = output["data"]["hits"][i]["slide_ids"]
         if "demographic" in output["data"]["hits"][i]:
             if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
                 alive+=1
@@ -327,7 +335,6 @@ if __name__ == '__main__':
                     # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
                     agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
         for data in output["data"]["hits"][i]["samples"]:
-            # print(data["portions"][0]["slides"])
             sample = data["portions"][0]["slides"][0]
             patient["slides"] = {}
             patient["slides"]["slide_id"] = sample["slide_id"]
@@ -364,9 +371,7 @@ if __name__ == '__main__':
                 patient["slides"]["SampleCode"] = (codes[3][0:2])
         dict_data["data"].append(patient)
 
-# i need a new dictionary of the patient ID, slide ID's for them, and then whatever information the slide ID's have
-#     dict_data = {}
-    if len(agesAtDiagnosis) > 0:
+    if len(agesAtDiagnosis) > 0:                                                                                        # print stats
         print("Alive: " + str(alive) + ", Dead: " + str(dead))
         print("Median age is: " + str(statistics.median(agesAtDiagnosis)))
         q3, q1 = np.percentile(agesAtDiagnosis, [75, 25])
@@ -374,20 +379,13 @@ if __name__ == '__main__':
         print("IQR age is: " + str(iqr))
     if len(timeTillDeath) > 0:
         print("Median age till death is: " + str(statistics.median(timeTillDeath)))
-    # print(dict_data)
-    # print(main_data)
     print(mutation_genes_data)
 
-    # new = open("newData.json", )
-
-    with open("newData.json", 'w') as new_:
+    with open("newData.json", 'w') as new_:                                                                             # put data in json
         print(json.dumps(dict_data, indent=2), file=new_)
 
-    # case_ids = open("case_ids.json", 'w')
-
-    with open("case_ids.json", 'w') as case_ids_:
+    with open("case_ids.json", 'w') as case_ids_:                                                                       # put slide IDs in json
         print(json.dumps(mutation_genes_data, indent=2), file=case_ids_)
-
 
     f.close()
     new_.close()

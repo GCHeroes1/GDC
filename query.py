@@ -264,38 +264,38 @@ if __name__ == '__main__':
     # print(args)
 
     cases = get_cases(args)
-    if args.cases_out:
-        with open(args.cases_out, 'w') as f:
-            print(json.dumps(cases, indent=2), file=f)
-
-    if cases['warnings']:
-        print('NB: warnings returned:')
-        print(cases['warnings'])
-
-    print('%i cases returned' % len(cases['data']['hits']))
-
-    all_slides = []
-    for hit in cases['data']['hits']:
-        all_slides += hit['slide_ids']
-
-    print('%i total slides' % len(all_slides))
-
-    if args.no_files:
-        print('exiting without query slide files')
-        sys.exit(0)
-
-    print('querying slide files')
-
-    for hit in cases['data']['hits']:
-        print('#', end='', flush=True)
-        slides = {}
-        for slide in hit['slide_ids']:
-            print('.', end='', flush=True)
-            slides[slide] = slide_to_files(slide)['data']['hits']
-
-        hit['slides'] = slides
-
-    print()
+    # if args.cases_out:
+    #     with open(args.cases_out, 'w') as f:
+    #         print(json.dumps(cases, indent=2), file=f)
+    #
+    # if cases['warnings']:
+    #     print('NB: warnings returned:')
+    #     print(cases['warnings'])
+    #
+    # print('%i cases returned' % len(cases['data']['hits']))
+    #
+    # all_slides = []
+    # for hit in cases['data']['hits']:
+    #     all_slides += hit['slide_ids']
+    #
+    # print('%i total slides' % len(all_slides))
+    #
+    # if args.no_files:
+    #     print('exiting without query slide files')
+    #     sys.exit(0)
+    #
+    # print('querying slide files')
+    #
+    # for hit in cases['data']['hits']:
+    #     print('#', end='', flush=True)
+    #     slides = {}
+    #     for slide in hit['slide_ids']:
+    #         print('.', end='', flush=True)
+    #         slides[slide] = slide_to_files(slide)['data']['hits']
+    #
+    #     hit['slides'] = slides
+    #
+    # print()
     outputFile = args.slides_out
     with open(outputFile, 'w') as f:
         print(json.dumps(cases, indent=2), file=f)
@@ -310,31 +310,44 @@ if __name__ == '__main__':
     timeTillDeath = []
     dict_data = {"data":[]}
     mutation_genes_data = {"case_ids":[]}
-
+    tempSlide = 0
     for i in range(0, len(output["data"]["hits"])):                                                                     # constructing json
-        patient = {}
-        patient["patient_id"] = output["data"]["hits"][i]["id"]
+        # print(len(output["data"]["hits"]))
+        # print("hit" + str(i))
         if "slide_ids" in output["data"]["hits"][i]:
-            numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
+            # numberOfSlides += len(output["data"]["hits"][i]["slide_ids"])
             for slide_ids in output["data"]["hits"][i]["slide_ids"]:
                 mutation_genes_data["case_ids"].append(slide_ids)
-        if "demographic" in output["data"]["hits"][i]:
-            if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
-                alive+=1
-                patient["vital_status"] = "Alive"
-            else:
-                dead+=1
-                patient["vital_status"] = "Dead"
-            if "days_to_death" in output["data"]["hits"][i]["demographic"]:
-                if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
-                    timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
-                    patient["days_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
-        if "diagnoses" in output["data"]["hits"][i]:
-            if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
-                if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
-                    # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
-                    agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
+                tempSlide = slide_ids
+        print(tempSlide)
+
         for data in output["data"]["hits"][i]["samples"]:
+            patient = {}
+            patient["patient_id"] = output["data"]["hits"][i]["id"]
+            if "slide_ids" in output["data"]["hits"][i]:
+                numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
+            if "demographic" in output["data"]["hits"][i]:
+                if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
+                    alive+=1
+                    patient["vital_status"] = "Alive"
+                else:
+                    dead+=1
+                    patient["vital_status"] = "Dead"
+                if "days_to_death" in output["data"]["hits"][i]["demographic"]:
+                    if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
+                        timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
+                        patient["days_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
+            if "diagnoses" in output["data"]["hits"][i]:
+                if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
+                    if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
+                        # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
+                        agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
+
+            # print(output["data"]["hits"][i]["slides"]["b90d346a-e8b9-4e71-ada7-bce4cd3248da"])
+
+            # patient["slides"] = {}
+            # for data in output["data"]["hits"][i]["samples"]:
+            # print(len(output["data"]["hits"][i]["samples"]))
             sample = data["portions"][0]["slides"][0]
             patient["slides"] = {}
             patient["slides"]["slide_id"] = sample["slide_id"]
@@ -369,7 +382,8 @@ if __name__ == '__main__':
             codes = (sample["submitter_id"]).split("-", )
             if codes[0] == "TCGA":
                 patient["slides"]["SampleCode"] = (codes[3][0:2])
-        dict_data["data"].append(patient)
+            # dict_data["data"].append(patient["slides"])
+            dict_data["data"].append(patient)
 
     if len(agesAtDiagnosis) > 0:                                                                                        # print stats
         print("Alive: " + str(alive) + ", Dead: " + str(dead))

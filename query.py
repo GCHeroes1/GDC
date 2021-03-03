@@ -147,49 +147,6 @@ CASE_FILTERS = {
     ]
 }
 
-# NEW_FILTERS = {
-#     "op": "and",
-#       "content": [
-#         {
-#           "op": "in",
-#           "content": {
-#             "field": "cases.primary_site",
-#             "value": [
-#               "skin"
-#             ]
-#           }
-#         },
-#         {
-#           "op": "in",
-#           "content": {
-#             "field": "occurrence.case.case_id",
-#             "value": [
-#               "e5bc45ce-8a14-40b5-b9b5-ce45609fef3a",
-#               "49f961af-1126-431d-93cd-18941c1738f3",
-#               "9817ec15-605a-40db-b848-2199e5ccbb7b",
-#               "beab616a-256e-48f3-a458-028897a6138c",
-#               "af915978-c5e1-4dd4-ab0e-d2be5ac0ae4f",
-#               "449c9d70-d8aa-41d4-beeb-0bbfc73a23d8",
-#               "44b5453a-3009-43b9-bc34-71a11a6d5e63",
-#               "3429967f-4f77-4894-bf27-c4a22698ca92",
-#               "ef608754-3f87-458e-9bcf-4434c54c8c9e",
-#               "83d05b9a-f409-4169-bef9-e772d2cfbfaf",
-#               "ceb45393-54ee-4801-8c6f-c0aa66e37e60",
-#               "590b5e18-d837-4c0e-becf-80520db57c0f",
-#               "4a4f5ee9-b588-4357-b058-effbfb53e2c3",
-#               "dde0b2be-ea43-4de7-8feb-ccdc073c6978",
-#               "46801be1-f035-421f-aae4-81baf3bb8d40",
-#               "d781260c-f969-456e-bf16-044dc5b181a4",
-#               "b8a1732f-c1cb-4a02-af4f-61b63d3d52df",
-#               "1af5d168-a3ff-4648-b195-ede2e7a5ca26",
-#               "0a4b780e-8143-4118-ad98-fd2a2a6678c3",
-#               "d6283ab0-9019-4ad2-93aa-2e6b39cd9641"
-#             ]
-#           }
-#         }
-#       ],
-#     }
-
 def process_args():
     ap = argparse.ArgumentParser(description='Get metadata from the GDC.')
     ap.add_argument('-C', '--cases', help='existing JSON file of case query results', default=None)
@@ -264,38 +221,38 @@ if __name__ == '__main__':
     # print(args)
 
     cases = get_cases(args)
-    # if args.cases_out:
-    #     with open(args.cases_out, 'w') as f:
-    #         print(json.dumps(cases, indent=2), file=f)
-    #
-    # if cases['warnings']:
-    #     print('NB: warnings returned:')
-    #     print(cases['warnings'])
-    #
-    # print('%i cases returned' % len(cases['data']['hits']))
-    #
-    # all_slides = []
-    # for hit in cases['data']['hits']:
-    #     all_slides += hit['slide_ids']
-    #
-    # print('%i total slides' % len(all_slides))
-    #
-    # if args.no_files:
-    #     print('exiting without query slide files')
-    #     sys.exit(0)
-    #
-    # print('querying slide files')
-    #
-    # for hit in cases['data']['hits']:
-    #     print('#', end='', flush=True)
-    #     slides = {}
-    #     for slide in hit['slide_ids']:
-    #         print('.', end='', flush=True)
-    #         slides[slide] = slide_to_files(slide)['data']['hits']
-    #
-    #     hit['slides'] = slides
-    #
-    # print()
+    if args.cases_out:
+        with open(args.cases_out, 'w') as f:
+            print(json.dumps(cases, indent=2), file=f)
+
+    if cases['warnings']:
+        print('NB: warnings returned:')
+        print(cases['warnings'])
+
+    print('%i cases returned' % len(cases['data']['hits']))
+
+    all_slides = []
+    for hit in cases['data']['hits']:
+        all_slides += hit['slide_ids']
+
+    print('%i total slides' % len(all_slides))
+
+    if args.no_files:
+        print('exiting without query slide files')
+        sys.exit(0)
+
+    print('querying slide files')
+
+    for hit in cases['data']['hits']:
+        print('#', end='', flush=True)
+        slides = {}
+        for slide in hit['slide_ids']:
+            print('.', end='', flush=True)
+            slides[slide] = slide_to_files(slide)['data']['hits']
+
+        hit['slides'] = slides
+
+    print()
     outputFile = args.slides_out
     with open(outputFile, 'w') as f:
         print(json.dumps(cases, indent=2), file=f)
@@ -312,15 +269,14 @@ if __name__ == '__main__':
     mutation_genes_data = {"case_ids":[]}
     tempSlide = 0
     for i in range(0, len(output["data"]["hits"])):                                                                     # constructing json
-        # print(len(output["data"]["hits"]))
-        # print("hit" + str(i))
         if "slide_ids" in output["data"]["hits"][i]:
-            # numberOfSlides += len(output["data"]["hits"][i]["slide_ids"])
             for slide_ids in output["data"]["hits"][i]["slide_ids"]:
                 mutation_genes_data["case_ids"].append(slide_ids)
-                tempSlide = slide_ids
-        print(tempSlide)
-
+        if "demographic" in output["data"]["hits"][i]:
+            if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
+                alive+=1
+            else:
+                dead+=1
         for data in output["data"]["hits"][i]["samples"]:
             patient = {}
             patient["patient_id"] = output["data"]["hits"][i]["id"]
@@ -328,29 +284,34 @@ if __name__ == '__main__':
                 numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
             if "demographic" in output["data"]["hits"][i]:
                 if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
-                    alive+=1
                     patient["vital_status"] = "Alive"
                 else:
-                    dead+=1
                     patient["vital_status"] = "Dead"
                 if "days_to_death" in output["data"]["hits"][i]["demographic"]:
                     if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
                         timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
-                        patient["days_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
+                        patient["years_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
             if "diagnoses" in output["data"]["hits"][i]:
                 if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
                     if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
                         # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
                         agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
 
-            # print(output["data"]["hits"][i]["slides"]["b90d346a-e8b9-4e71-ada7-bce4cd3248da"])
-
-            # patient["slides"] = {}
-            # for data in output["data"]["hits"][i]["samples"]:
-            # print(len(output["data"]["hits"][i]["samples"]))
             sample = data["portions"][0]["slides"][0]
             patient["slides"] = {}
-            patient["slides"]["slide_id"] = sample["slide_id"]
+            currentSlideID = sample["slide_id"]
+            patient["slides"]["slide_id"] = currentSlideID
+            if "slides" in output["data"]["hits"][i]:
+                slideData = output["data"]["hits"][i]["slides"][currentSlideID]
+                print(slideData)
+                print(len(slideData))
+                if len(slideData) >= 1:
+                # if slideData[0] is not None:
+                    if "file_id" in slideData[0]:
+                        fileID = slideData[0]["file_id"]
+                        patient["slides"]["file_id"] = fileID
+            if "case_id" in output["data"]["hits"][i]:
+                patient["slides"]["case_id"] = output["data"]["hits"][i]["case_id"]
             if "percent_stromal_cells" in sample:
                 patient["slides"]["percent_stromal_cells"] = sample["percent_stromal_cells"]
             if "section_location" in sample:
@@ -381,8 +342,16 @@ if __name__ == '__main__':
                 patient["slides"]["submitter_id"] = sample["submitter_id"]
             codes = (sample["submitter_id"]).split("-", )
             if codes[0] == "TCGA":
-                patient["slides"]["SampleCode"] = (codes[3][0:2])
-            # dict_data["data"].append(patient["slides"])
+                sampleCode = (codes[3][0:2])
+                patient["slides"]["SampleCode"] = sampleCode
+                if sampleCode == "01":
+                    patient["slides"]["sample_type"] = "Primary Solid Tumor"
+                if sampleCode == "06":
+                    patient["slides"]["sample_type"] = "Metastatic"
+                if sampleCode == "07":
+                    patient["slides"]["sample_type"] = "Additional Metastatic"
+                if sampleCode == "11":
+                    patient["slides"]["sample_type"] = "Solid Tissue Normal"
             dict_data["data"].append(patient)
 
     if len(agesAtDiagnosis) > 0:                                                                                        # print stats
@@ -393,9 +362,9 @@ if __name__ == '__main__':
         print("IQR age is: " + str(iqr))
     if len(timeTillDeath) > 0:
         print("Median age till death is: " + str(statistics.median(timeTillDeath)))
-    print(mutation_genes_data)
+    # print(mutation_genes_data)
 
-    with open("newData.json", 'w') as new_:                                                                             # put data in json
+    with open("reconstructedData.json", 'w') as new_:                                                                        # put data in json
         print(json.dumps(dict_data, indent=2), file=new_)
 
     with open("case_ids.json", 'w') as case_ids_:                                                                       # put slide IDs in json

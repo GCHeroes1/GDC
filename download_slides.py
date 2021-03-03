@@ -3,7 +3,7 @@ import json
 import sys
 from pathlib import Path
 
-path_to_slides_data = "slides_out.json"
+path_to_slides_data = "reconstructedData.json"
 endpoint = "https://api.gdc.cancer.gov/data/"
 
 with open(path_to_slides_data, 'r') as f:
@@ -27,28 +27,42 @@ def download_slide(hit_id, slide_id, file_id):
                 dl += len(data)
                 f.write(data)
                 done = int(50 * dl / total_length)
-                sys.stdout.write("\r[%s%s]" % ('=' * done, ' ' * (50-done)) )    
+                sys.stdout.write("\r[%s%s]" % ('=' * done, ' ' * (50-done)) )
                 sys.stdout.flush()
             print()
 
 
 # print(slides_data)
 
-hits = slides_data["data"]["hits"]  # all slides
+patients = slides_data["data"]  # all slides
 
-for hit in hits:
-    if "slide_ids" in hit:
-        hit_id = hit["id"]
-        print(f"Getting Slides for case id: {hit_id}")
-        for slide_id in hit["slide_ids"]:
-            slide_file_images = hit["slides"][slide_id]
-            for image in slide_file_images:
-                file_id = image["file_id"]
-                print(f"    downloading slide with id {slide_id} and file id {file_id}")
-                download_slide(hit_id, slide_id, file_id)
-                sys.exit()
-        print()
-            
-            
+for patient in patients:
+    patientID = patient["patient_id"]
+    data = patient["slides"]
+    if "slide_id" not in data:
+        print("slide ID for " + patientID + " is missing")
+        sys.exit()
+    if "case_id" not in data:
+        print("case ID for " + patientID + " is missing")
+        sys.exit()
+    if "file_id" not in data:
+        print("file ID for " + patientID + " is missing")
+        sys.exit()
+    print(f"Getting Slides for case id: " + data["case_id"])
+    print(f"    downloading slide with id " + data["slide_id"] + " and file id " + data["file_id"])
+    download_slide(data["case_id"], data["slide_id"], data["file_id"])
+    sys.exit()
+# print()
+
+        # for slide_id in patient["slide_ids"]:
+        #     slide_file_images = hit["slides"][slide_id]
+        #     for image in slide_file_images:
+        #         file_id = image["file_id"]
+        #         print(f"    downloading slide with id {slide_id} and file id {file_id}")
+        #         download_slide(hit_id, slide_id, file_id)
+        #         sys.exit()
+        # print()
+
+
 
 

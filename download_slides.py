@@ -52,16 +52,6 @@ for patient in patients:
     print(f"    downloading slide with id " + data["slide_id"] + " and file id " + data["file_id"])
     download_slide(data["case_id"], data["slide_id"], data["file_id"])
     sys.exit()
-# print()
-
-        # for slide_id in patient["slide_ids"]:
-        #     slide_file_images = hit["slides"][slide_id]
-        #     for image in slide_file_images:
-        #         file_id = image["file_id"]
-        #         print(f"    downloading slide with id {slide_id} and file id {file_id}")
-        #         download_slide(hit_id, slide_id, file_id)
-        #         sys.exit()
-        # print()
 
 
 

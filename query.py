@@ -221,38 +221,38 @@ if __name__ == '__main__':
     # print(args)
 
     cases = get_cases(args)
-    # if args.cases_out:
-    #     with open(args.cases_out, 'w') as f:
-    #         print(json.dumps(cases, indent=2), file=f)
-    #
-    # if cases['warnings']:
-    #     print('NB: warnings returned:')
-    #     print(cases['warnings'])
-    #
-    # print('%i cases returned' % len(cases['data']['hits']))
-    #
-    # all_slides = []
-    # for hit in cases['data']['hits']:
-    #     all_slides += hit['slide_ids']
-    #
-    # print('%i total slides' % len(all_slides))
-    #
-    # if args.no_files:
-    #     print('exiting without query slide files')
-    #     sys.exit(0)
-    #
-    # print('querying slide files')
-    #
-    # for hit in cases['data']['hits']:
-    #     print('#', end='', flush=True)
-    #     slides = {}
-    #     for slide in hit['slide_ids']:
-    #         print('.', end='', flush=True)
-    #         slides[slide] = slide_to_files(slide)['data']['hits']
-    #
-    #     hit['slides'] = slides
-    #
-    # print()
+    if args.cases_out:
+        with open(args.cases_out, 'w') as f:
+            print(json.dumps(cases, indent=2), file=f)
+
+    if cases['warnings']:
+        print('NB: warnings returned:')
+        print(cases['warnings'])
+
+    print('%i cases returned' % len(cases['data']['hits']))
+
+    all_slides = []
+    for hit in cases['data']['hits']:
+        all_slides += hit['slide_ids']
+
+    print('%i total slides' % len(all_slides))
+
+    if args.no_files:
+        print('exiting without query slide files')
+        sys.exit(0)
+
+    print('querying slide files')
+
+    for hit in cases['data']['hits']:
+        print('#', end='', flush=True)
+        slides = {}
+        for slide in hit['slide_ids']:
+            print('.', end='', flush=True)
+            slides[slide] = slide_to_files(slide)['data']['hits']
+
+        hit['slides'] = slides
+
+    print()
     outputFile = args.slides_out
     with open(outputFile, 'w') as f:
         print(json.dumps(cases, indent=2), file=f)

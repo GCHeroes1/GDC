@@ -221,38 +221,38 @@ if __name__ == '__main__':
     # print(args)
 
     cases = get_cases(args)
-    if args.cases_out:
-        with open(args.cases_out, 'w') as f:
-            print(json.dumps(cases, indent=2), file=f)
-
-    if cases['warnings']:
-        print('NB: warnings returned:')
-        print(cases['warnings'])
-
-    print('%i cases returned' % len(cases['data']['hits']))
-
-    all_slides = []
-    for hit in cases['data']['hits']:
-        all_slides += hit['slide_ids']
-
-    print('%i total slides' % len(all_slides))
-
-    if args.no_files:
-        print('exiting without query slide files')
-        sys.exit(0)
-
-    print('querying slide files')
-
-    for hit in cases['data']['hits']:
-        print('#', end='', flush=True)
-        slides = {}
-        for slide in hit['slide_ids']:
-            print('.', end='', flush=True)
-            slides[slide] = slide_to_files(slide)['data']['hits']
-
-        hit['slides'] = slides
-
-    print()
+    # if args.cases_out:
+    #     with open(args.cases_out, 'w') as f:
+    #         print(json.dumps(cases, indent=2), file=f)
+    #
+    # if cases['warnings']:
+    #     print('NB: warnings returned:')
+    #     print(cases['warnings'])
+    #
+    # print('%i cases returned' % len(cases['data']['hits']))
+    #
+    # all_slides = []
+    # for hit in cases['data']['hits']:
+    #     all_slides += hit['slide_ids']
+    #
+    # print('%i total slides' % len(all_slides))
+    #
+    # if args.no_files:
+    #     print('exiting without query slide files')
+    #     sys.exit(0)
+    #
+    # print('querying slide files')
+    #
+    # for hit in cases['data']['hits']:
+    #     print('#', end='', flush=True)
+    #     slides = {}
+    #     for slide in hit['slide_ids']:
+    #         print('.', end='', flush=True)
+    #         slides[slide] = slide_to_files(slide)['data']['hits']
+    #
+    #     hit['slides'] = slides
+    #
+    # print()
     outputFile = args.slides_out
     with open(outputFile, 'w') as f:
         print(json.dumps(cases, indent=2), file=f)
@@ -282,6 +282,7 @@ if __name__ == '__main__':
             patient["patient_id"] = output["data"]["hits"][i]["id"]
             if "slide_ids" in output["data"]["hits"][i]:
                 numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
+
             if "demographic" in output["data"]["hits"][i]:
                 if output["data"]["hits"][i]["demographic"]["vital_status"] == "Alive":
                     patient["vital_status"] = "Alive"
@@ -291,11 +292,24 @@ if __name__ == '__main__':
                     if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
                         timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
                         patient["years_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
+
             if "diagnoses" in output["data"]["hits"][i]:
                 if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
                     if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
-                        # print(output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"])
                         agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
+                        patient["age_at_diagnosis"] = (output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] / 365)
+                if "year_of_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
+                    patient["year_of_diagnosis"] = output["data"]["hits"][i]["diagnoses"][0]["year_of_diagnosis"]
+                if "tumor_stage" in output["data"]["hits"][i]["diagnoses"][0]:
+                    patient["tumor_stage"] = output["data"]["hits"][i]["diagnoses"][0]["tumor_stage"]
+                if "tissue_or_organ_of_origin" in output["data"]["hits"][i]["diagnoses"][0]:
+                    patient["tissue_or_organ_of_origin"] = output["data"]["hits"][i]["diagnoses"][0]["tissue_or_organ_of_origin"]
+                if "site_of_resection_or_biopsy" in output["data"]["hits"][i]["diagnoses"][0]:
+                    patient["site_of_resection_or_biopsy"] = output["data"]["hits"][i]["diagnoses"][0]["site_of_resection_or_biopsy"]
+                if "prior_malignancy" in output["data"]["hits"][i]["diagnoses"][0]:
+                    patient["prior_malignancy"] = output["data"]["hits"][i]["diagnoses"][0]["prior_malignancy"]
+                if "primary_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
+                    patient["primary_diagnosis"] = output["data"]["hits"][i]["diagnoses"][0]["primary_diagnosis"]
 
             sample = data["portions"][0]["slides"][0]
             patient["slides"] = {}
@@ -303,10 +317,7 @@ if __name__ == '__main__':
             patient["slides"]["slide_id"] = currentSlideID
             if "slides" in output["data"]["hits"][i]:
                 slideData = output["data"]["hits"][i]["slides"][currentSlideID]
-                print(slideData)
-                print(len(slideData))
                 if len(slideData) >= 1:
-                # if slideData[0] is not None:
                     if "file_id" in slideData[0]:
                         fileID = slideData[0]["file_id"]
                         patient["slides"]["file_id"] = fileID

@@ -270,6 +270,7 @@ if __name__ == '__main__':
     dict_data = {"data":[]}
     mutation_genes_data = {"case_ids":[]}
     tempSlide = 0
+    totalSize = 0
     for i in range(0, len(output["data"]["hits"])):                                                                     # constructing json
         if "slide_ids" in output["data"]["hits"][i]:
             for slide_ids in output["data"]["hits"][i]["slide_ids"]:
@@ -328,6 +329,10 @@ if __name__ == '__main__':
                     if "file_id" in slideData[0]:
                         fileID = slideData[0]["file_id"]
                         patient["slides"]["file_id"] = fileID
+                    if "file_size" in slideData[0]:
+                        fileSize = slideData[0]["file_size"]
+                        patient["slides"]["file_size"] = fileSize
+                        totalSize += fileSize
             if "case_id" in output["data"]["hits"][i]:
                 patient["slides"]["case_id"] = output["data"]["hits"][i]["case_id"]
             if "percent_stromal_cells" in sample:
@@ -380,6 +385,7 @@ if __name__ == '__main__':
         print("IQR age is: " + str(iqr))
     if len(timeTillDeath) > 0:
         print("Median age till death is: " + str(statistics.median(timeTillDeath)))
+    print(totalSize)
     # print(mutation_genes_data)
 
     with open("reconstructedData.json", 'w') as new_:                                                                        # put data in json

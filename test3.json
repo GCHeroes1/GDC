@@ -20,6 +20,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23314,
             "classification_of_tumor": "not reported",
@@ -132,6 +134,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2912,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27566,
             "classification_of_tumor": "not reported",
@@ -250,6 +254,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1617,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20284,
             "classification_of_tumor": "not reported",
@@ -343,6 +349,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 931,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19645,
             "classification_of_tumor": "not reported",
@@ -484,6 +492,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 486,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20938,
             "classification_of_tumor": "not reported",
@@ -614,6 +624,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6716,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14043,
             "classification_of_tumor": "not reported",
@@ -725,6 +737,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3408,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19687,
             "classification_of_tumor": "not reported",
@@ -836,6 +850,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24125,
             "classification_of_tumor": "not reported",
@@ -948,6 +964,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28883,
             "classification_of_tumor": "not reported",
@@ -1060,6 +1078,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2785,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19372,
             "classification_of_tumor": "not reported",
@@ -1171,6 +1191,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 17,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25850,
             "classification_of_tumor": "not reported",
@@ -1282,6 +1304,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 9527,
             "classification_of_tumor": "not reported",
@@ -1394,6 +1418,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24371,
             "classification_of_tumor": "not reported",
@@ -1506,6 +1532,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17626,
             "classification_of_tumor": "not reported",
@@ -1618,6 +1646,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 13061,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -1730,6 +1760,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16705,
             "classification_of_tumor": "not reported",
@@ -1842,6 +1874,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 0,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 32872,
             "classification_of_tumor": "not reported",
@@ -1953,6 +1987,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19973,
             "classification_of_tumor": "not reported",
@@ -2065,6 +2101,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24348,
             "classification_of_tumor": "not reported",
@@ -2177,6 +2215,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 718,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23109,
             "classification_of_tumor": "not reported",
@@ -2301,6 +2341,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25643,
             "classification_of_tumor": "not reported",
@@ -2401,6 +2443,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 487,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15935,
             "classification_of_tumor": "not reported",
@@ -2519,6 +2563,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1209,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19423,
             "classification_of_tumor": "not reported",
@@ -2611,6 +2657,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27428,
             "classification_of_tumor": "not reported",
@@ -2731,6 +2779,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": null,
             "classification_of_tumor": "not reported",
@@ -2859,6 +2909,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1701,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29087,
             "classification_of_tumor": "not reported",
@@ -2971,6 +3023,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20740,
             "classification_of_tumor": "not reported",
@@ -3082,6 +3136,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4407,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15357,
             "classification_of_tumor": "not reported",
@@ -3194,6 +3250,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 587,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 17730,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -3345,6 +3403,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 688,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20559,
             "classification_of_tumor": "not reported",
@@ -3456,6 +3516,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1330,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22676,
             "classification_of_tumor": "not reported",
@@ -3568,6 +3630,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2365,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29167,
             "classification_of_tumor": "not reported",
@@ -3679,6 +3743,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 454,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14773,
             "classification_of_tumor": "not reported",
@@ -3790,6 +3856,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 440,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26712,
             "classification_of_tumor": "not reported",
@@ -3902,6 +3970,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30454,
             "classification_of_tumor": "not reported",
@@ -4014,6 +4084,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 382,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26216,
             "classification_of_tumor": "not reported",
@@ -4125,6 +4197,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19858,
             "classification_of_tumor": "not reported",
@@ -4237,6 +4311,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4414,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 7194,
             "classification_of_tumor": "not reported",
@@ -4348,6 +4424,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27355,
             "classification_of_tumor": "not reported",
@@ -4460,6 +4538,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1714,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22119,
             "classification_of_tumor": "not reported",
@@ -4571,6 +4651,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6699,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 12727,
             "classification_of_tumor": "not reported",
@@ -4682,6 +4764,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3708,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11294,
             "classification_of_tumor": "not reported",
@@ -4793,6 +4877,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 335,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27622,
             "classification_of_tumor": "not reported",
@@ -4904,6 +4990,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1812,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13552,
             "classification_of_tumor": "not reported",
@@ -5015,6 +5103,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28383,
             "classification_of_tumor": "not reported",
@@ -5127,6 +5217,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4504,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17835,
             "classification_of_tumor": "not reported",
@@ -5239,6 +5331,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 820,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13585,
             "classification_of_tumor": "not reported",
@@ -5359,6 +5453,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 951,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15903,
             "classification_of_tumor": "not reported",
@@ -5489,6 +5585,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 774,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28315,
             "classification_of_tumor": "not reported",
@@ -5608,6 +5706,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4088,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22535,
             "classification_of_tumor": "not reported",
@@ -5736,6 +5836,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19137,
             "classification_of_tumor": "not reported",
@@ -5820,6 +5922,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6138,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22150,
             "classification_of_tumor": "not reported",
@@ -5931,6 +6035,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1455,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 7510,
             "classification_of_tumor": "not reported",
@@ -6043,6 +6149,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21033,
             "classification_of_tumor": "not reported",
@@ -6155,6 +6263,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 760,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20708,
             "classification_of_tumor": "not reported",
@@ -6265,6 +6375,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11815,
             "classification_of_tumor": "not reported",
@@ -6349,6 +6461,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 417,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29836,
             "classification_of_tumor": "not reported",
@@ -6460,6 +6574,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4533,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17984,
             "classification_of_tumor": "not reported",
@@ -6570,6 +6686,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22932,
             "classification_of_tumor": "not reported",
@@ -6654,6 +6772,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 392,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18739,
             "classification_of_tumor": "not reported",
@@ -6766,6 +6886,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1487,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 18953,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -6917,6 +7039,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5177,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16569,
             "classification_of_tumor": "not reported",
@@ -7028,6 +7152,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 651,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30843,
             "classification_of_tumor": "not reported",
@@ -7147,6 +7273,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4255,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 17239,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -7276,6 +7404,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21363,
             "classification_of_tumor": "not reported",
@@ -7388,6 +7518,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 21,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17545,
             "classification_of_tumor": "not reported",
@@ -7499,6 +7631,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23132,
             "classification_of_tumor": "not reported",
@@ -7611,6 +7745,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5219,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15710,
             "classification_of_tumor": "not reported",
@@ -7722,6 +7858,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 640,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 26056,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -7833,6 +7971,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2359,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20493,
             "classification_of_tumor": "not reported",
@@ -7944,6 +8084,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6826,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16701,
             "classification_of_tumor": "not reported",
@@ -8055,6 +8197,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20626,
             "classification_of_tumor": "not reported",
@@ -8147,6 +8291,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26447,
             "classification_of_tumor": "not reported",
@@ -8277,6 +8423,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 384,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26118,
             "classification_of_tumor": "not reported",
@@ -8389,6 +8537,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 112,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18491,
             "classification_of_tumor": "not reported",
@@ -8501,6 +8651,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 8952,
             "classification_of_tumor": "not reported",
@@ -8613,6 +8765,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1039,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17569,
             "classification_of_tumor": "not reported",
@@ -8724,6 +8878,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22097,
             "classification_of_tumor": "not reported",
@@ -8836,6 +8992,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 11217,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 9058,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -8947,6 +9105,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 531,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21731,
             "classification_of_tumor": "not reported",
@@ -9058,6 +9218,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 769,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30805,
             "classification_of_tumor": "not reported",
@@ -9169,6 +9331,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25281,
             "classification_of_tumor": "not reported",
@@ -9281,6 +9445,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25000,
             "classification_of_tumor": "not reported",
@@ -9393,6 +9559,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": null,
             "classification_of_tumor": "not reported",
@@ -9503,6 +9671,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20970,
             "classification_of_tumor": "not reported",
@@ -9615,6 +9785,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 387,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17025,
             "classification_of_tumor": "not reported",
@@ -9726,6 +9898,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28680,
             "classification_of_tumor": "not reported",
@@ -9845,6 +10019,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23604,
             "classification_of_tumor": "not reported",
@@ -9946,6 +10122,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 7293,
             "classification_of_tumor": "not reported",
@@ -11186,6 +11364,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2010,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18577,
             "classification_of_tumor": "not reported",
@@ -11297,6 +11477,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": -3,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28078,
             "classification_of_tumor": "not reported",
@@ -11409,6 +11591,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2620,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15953,
             "classification_of_tumor": "not reported",
@@ -11520,6 +11704,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17731,
             "classification_of_tumor": "not reported",
@@ -11633,6 +11819,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 195,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29323,
             "classification_of_tumor": "not reported",
@@ -11795,6 +11983,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1002,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18971,
             "classification_of_tumor": "not reported",
@@ -11906,6 +12096,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1941,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22040,
             "classification_of_tumor": "not reported",
@@ -12017,6 +12209,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 620,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15337,
             "classification_of_tumor": "not reported",
@@ -12128,6 +12322,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 218,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24979,
             "classification_of_tumor": "not reported",
@@ -12239,6 +12435,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 301,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21359,
             "classification_of_tumor": "not reported",
@@ -12350,6 +12548,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 8966,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17910,
             "classification_of_tumor": "not reported",
@@ -12462,6 +12662,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5932,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15396,
             "classification_of_tumor": "not reported",
@@ -12573,6 +12775,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26176,
             "classification_of_tumor": "not reported",
@@ -12684,6 +12888,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22252,
             "classification_of_tumor": "not reported",
@@ -12768,6 +12974,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1096,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 22999,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -12880,6 +13088,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13648,
             "classification_of_tumor": "not reported",
@@ -12992,6 +13202,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14312,
             "classification_of_tumor": "not reported",
@@ -13104,6 +13316,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 823,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18961,
             "classification_of_tumor": "not reported",
@@ -13216,6 +13430,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 411,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20972,
             "classification_of_tumor": "not reported",
@@ -13327,6 +13543,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1319,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14327,
             "classification_of_tumor": "not reported",
@@ -13437,6 +13655,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 31661,
             "classification_of_tumor": "not reported",
@@ -13521,6 +13741,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 220,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18134,
             "classification_of_tumor": "not reported",
@@ -13632,6 +13854,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 601,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23076,
             "classification_of_tumor": "not reported",
@@ -13743,6 +13967,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4942,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26466,
             "classification_of_tumor": "not reported",
@@ -13854,6 +14080,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 891,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26058,
             "classification_of_tumor": "not reported",
@@ -13967,6 +14195,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3080,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27210,
             "classification_of_tumor": "not reported",
@@ -14204,6 +14434,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2828,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16278,
             "classification_of_tumor": "not reported",
@@ -14322,6 +14554,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2367,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24717,
             "classification_of_tumor": "not reported",
@@ -14414,6 +14648,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 553,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21379,
             "classification_of_tumor": "not reported",
@@ -14525,6 +14761,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 226,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22972,
             "classification_of_tumor": "not reported",
@@ -14636,6 +14874,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 645,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26439,
             "classification_of_tumor": "not reported",
@@ -14747,6 +14987,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1663,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23779,
             "classification_of_tumor": "not reported",
@@ -14858,6 +15100,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28319,
             "classification_of_tumor": "not reported",
@@ -14977,6 +15221,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19733,
             "classification_of_tumor": "not reported",
@@ -15070,6 +15316,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26872,
             "classification_of_tumor": "not reported",
@@ -15182,6 +15430,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 12,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20610,
             "classification_of_tumor": "not reported",
@@ -15294,6 +15544,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 338,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20072,
             "classification_of_tumor": "not reported",
@@ -15406,6 +15658,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2249,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22718,
             "classification_of_tumor": "not reported",
@@ -15517,6 +15771,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21660,
             "classification_of_tumor": "not reported",
@@ -15629,6 +15885,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3196,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21209,
             "classification_of_tumor": "not reported",
@@ -15748,6 +16006,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14055,
             "classification_of_tumor": "not reported",
@@ -15878,6 +16138,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19127,
             "classification_of_tumor": "not reported",
@@ -15990,6 +16252,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 439,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23219,
             "classification_of_tumor": "not reported",
@@ -16101,6 +16365,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19664,
             "classification_of_tumor": "not reported",
@@ -16213,6 +16479,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22050,
             "classification_of_tumor": "not reported",
@@ -16325,6 +16593,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3932,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22564,
             "classification_of_tumor": "not reported",
@@ -16436,6 +16706,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1160,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19431,
             "classification_of_tumor": "not reported",
@@ -16555,6 +16827,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25523,
             "classification_of_tumor": "not reported",
@@ -16693,6 +16967,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21851,
             "classification_of_tumor": "not reported",
@@ -16831,6 +17107,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11105,
             "classification_of_tumor": "not reported",
@@ -16969,6 +17247,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 9366,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -17099,6 +17379,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 396,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 31837,
             "classification_of_tumor": "not reported",
@@ -17210,6 +17492,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2022,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30286,
             "classification_of_tumor": "not reported",
@@ -17321,6 +17605,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13300,
             "classification_of_tumor": "not reported",
@@ -17433,6 +17719,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3733,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11054,
             "classification_of_tumor": "not reported",
@@ -17552,6 +17840,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -17680,6 +17970,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 543,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20424,
             "classification_of_tumor": "not reported",
@@ -17792,6 +18084,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 779,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17867,
             "classification_of_tumor": "not reported",
@@ -17904,6 +18198,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27556,
             "classification_of_tumor": "not reported",
@@ -18039,6 +18335,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 551,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 23171,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -18208,6 +18506,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15437,
             "classification_of_tumor": "not reported",
@@ -18338,6 +18638,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16968,
             "classification_of_tumor": "not reported",
@@ -18457,6 +18759,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4526,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19813,
             "classification_of_tumor": "not reported",
@@ -18549,6 +18853,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2897,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26782,
             "classification_of_tumor": "not reported",
@@ -18661,6 +18967,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1792,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18226,
             "classification_of_tumor": "not reported",
@@ -18772,6 +19080,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26226,
             "classification_of_tumor": "not reported",
@@ -18884,6 +19194,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 486,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20937,
             "classification_of_tumor": "not reported",
@@ -18995,6 +19307,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 8405,
             "classification_of_tumor": "not reported",
@@ -19107,6 +19421,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1814,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26048,
             "classification_of_tumor": "not reported",
@@ -19218,6 +19534,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1709,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17128,
             "classification_of_tumor": "not reported",
@@ -19329,6 +19647,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28412,
             "classification_of_tumor": "not reported",
@@ -19413,6 +19733,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1136,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25847,
             "classification_of_tumor": "not reported",
@@ -19525,6 +19847,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20230,
             "classification_of_tumor": "not reported",
@@ -19638,6 +19962,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 119,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19749,
             "classification_of_tumor": "not reported",
@@ -19800,6 +20126,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 10,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28394,
             "classification_of_tumor": "not reported",
@@ -19910,6 +20238,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1504,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27482,
             "classification_of_tumor": "not reported",
@@ -19994,6 +20324,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2329,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27553,
             "classification_of_tumor": "not reported",
@@ -20105,6 +20437,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21202,
             "classification_of_tumor": "not reported",
@@ -20217,6 +20551,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26471,
             "classification_of_tumor": "not reported",
@@ -20329,6 +20665,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 180,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28148,
             "classification_of_tumor": "not reported",
@@ -20440,6 +20778,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2950,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21318,
             "classification_of_tumor": "not reported",
@@ -20551,6 +20891,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 151,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19330,
             "classification_of_tumor": "not reported",
@@ -20663,6 +21005,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3976,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23286,
             "classification_of_tumor": "not reported",
@@ -20774,6 +21118,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1803,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18876,
             "classification_of_tumor": "not reported",
@@ -20885,6 +21231,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2166,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16768,
             "classification_of_tumor": "not reported",
@@ -20996,6 +21344,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 12330,
             "classification_of_tumor": "not reported",
@@ -21108,6 +21458,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18122,
             "classification_of_tumor": "not reported",
@@ -21220,6 +21572,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 632,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20539,
             "classification_of_tumor": "not reported",
@@ -21331,6 +21685,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 440,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17857,
             "classification_of_tumor": "not reported",
@@ -21442,6 +21798,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17950,
             "classification_of_tumor": "not reported",
@@ -21554,6 +21912,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 571,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23245,
             "classification_of_tumor": "not reported",
@@ -21665,6 +22025,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16948,
             "classification_of_tumor": "not reported",
@@ -21791,6 +22153,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4609,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14805,
             "classification_of_tumor": "not reported",
@@ -21934,6 +22298,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19333,
             "classification_of_tumor": "not reported",
@@ -22046,6 +22412,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1280,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24882,
             "classification_of_tumor": "not reported",
@@ -22157,6 +22525,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1378,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14236,
             "classification_of_tumor": "not reported",
@@ -22268,6 +22638,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2948,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 19712,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -22379,6 +22751,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 414,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24228,
             "classification_of_tumor": "not reported",
@@ -22490,6 +22864,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6768,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20399,
             "classification_of_tumor": "not reported",
@@ -22601,6 +22977,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 467,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21367,
             "classification_of_tumor": "not reported",
@@ -22713,6 +23091,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 196,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19733,
             "classification_of_tumor": "not reported",
@@ -22825,6 +23205,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 847,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18346,
             "classification_of_tumor": "not reported",
@@ -22937,6 +23319,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 126,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20605,
             "classification_of_tumor": "not reported",
@@ -23070,6 +23454,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4053,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15531,
             "classification_of_tumor": "not reported",
@@ -23181,6 +23567,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1204,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 26494,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -23293,6 +23681,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 804,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26708,
             "classification_of_tumor": "not reported",
@@ -23404,6 +23794,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 31790,
             "classification_of_tumor": "not reported",
@@ -23516,6 +23908,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2443,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23650,
             "classification_of_tumor": "not reported",
@@ -23627,6 +24021,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24839,
             "classification_of_tumor": "not reported",
@@ -23711,6 +24107,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1505,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 29603,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -23830,6 +24228,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18582,
             "classification_of_tumor": "not reported",
@@ -23960,6 +24360,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20235,
             "classification_of_tumor": "not reported",
@@ -24072,6 +24474,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 309,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19298,
             "classification_of_tumor": "not reported",
@@ -24183,6 +24587,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26232,
             "classification_of_tumor": "not reported",
@@ -24266,6 +24672,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 327,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23199,
             "classification_of_tumor": "not reported",
@@ -24349,6 +24757,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30718,
             "classification_of_tumor": "not reported",
@@ -24461,6 +24871,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 818,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21823,
             "classification_of_tumor": "not reported",
@@ -24579,6 +24991,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28491,
             "classification_of_tumor": "not reported",
@@ -24672,6 +25086,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1225,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14618,
             "classification_of_tumor": "not reported",
@@ -24784,6 +25200,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1716,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26899,
             "classification_of_tumor": "not reported",
@@ -24895,6 +25313,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 62,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22731,
             "classification_of_tumor": "not reported",
@@ -25014,6 +25434,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16910,
             "classification_of_tumor": "not reported",
@@ -25144,6 +25566,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": null,
             "classification_of_tumor": "not reported",
@@ -25254,6 +25678,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 301,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27537,
             "classification_of_tumor": "not reported",
@@ -25365,6 +25791,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5424,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 8637,
             "classification_of_tumor": "not reported",
@@ -25475,6 +25903,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19078,
             "classification_of_tumor": "not reported",
@@ -25559,6 +25989,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 206,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14628,
             "classification_of_tumor": "not reported",
@@ -25671,6 +26103,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 9188,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17820,
             "classification_of_tumor": "not reported",
@@ -25790,6 +26224,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2644,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25396,
             "classification_of_tumor": "not reported",
@@ -25919,6 +26355,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19808,
             "classification_of_tumor": "not reported",
@@ -26031,6 +26469,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 28110,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -26144,6 +26584,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 302,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25083,
             "classification_of_tumor": "not reported",
@@ -26278,6 +26720,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6176,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13140,
             "classification_of_tumor": "not reported",
@@ -26390,6 +26834,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17871,
             "classification_of_tumor": "not reported",
@@ -26502,6 +26948,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1446,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 26589,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -26614,6 +27062,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5065,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14563,
             "classification_of_tumor": "not reported",
@@ -26725,6 +27175,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2423,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14701,
             "classification_of_tumor": "not reported",
@@ -26836,6 +27288,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30003,
             "classification_of_tumor": "not reported",
@@ -26948,6 +27402,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1229,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17261,
             "classification_of_tumor": "not reported",
@@ -27059,6 +27515,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2452,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24618,
             "classification_of_tumor": "not reported",
@@ -27179,6 +27637,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15890,
             "classification_of_tumor": "not reported",
@@ -28419,6 +28879,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1156,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22499,
             "classification_of_tumor": "not reported",
@@ -28529,6 +28991,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16944,
             "classification_of_tumor": "not reported",
@@ -28620,6 +29084,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26197,
             "classification_of_tumor": "not reported",
@@ -28713,6 +29179,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4070,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24445,
             "classification_of_tumor": "not reported",
@@ -28824,6 +29292,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 0,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 31622,
             "classification_of_tumor": "not reported",
@@ -28936,6 +29406,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 10988,
             "classification_of_tumor": "not reported",
@@ -29048,6 +29520,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 422,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18910,
             "classification_of_tumor": "not reported",
@@ -29159,6 +29633,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1025,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20365,
             "classification_of_tumor": "not reported",
@@ -29270,6 +29746,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20396,
             "classification_of_tumor": "not reported",
@@ -29354,6 +29832,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1197,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26761,
             "classification_of_tumor": "not reported",
@@ -29465,6 +29945,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 31092,
             "classification_of_tumor": "not reported",
@@ -29577,6 +30059,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1729,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 12350,
             "classification_of_tumor": "not reported",
@@ -29688,6 +30172,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 714,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 9161,
             "classification_of_tumor": "not reported",
@@ -29800,6 +30286,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 7342,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 6684,
             "classification_of_tumor": "not reported",
@@ -29911,6 +30399,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21440,
             "classification_of_tumor": "not reported",
@@ -30023,6 +30513,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 480,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 28774,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -30134,6 +30626,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16430,
             "classification_of_tumor": "not reported",
@@ -30246,6 +30740,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 414,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15516,
             "classification_of_tumor": "not reported",
@@ -30357,6 +30853,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2369,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14426,
             "classification_of_tumor": "not reported",
@@ -30441,6 +30939,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 412,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20545,
             "classification_of_tumor": "not reported",
@@ -30552,6 +31052,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 16456,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -30664,6 +31166,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1109,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20172,
             "classification_of_tumor": "not reported",
@@ -30774,6 +31278,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14387,
             "classification_of_tumor": "not reported",
@@ -30858,6 +31364,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 896,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20782,
             "classification_of_tumor": "not reported",
@@ -30970,6 +31478,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30430,
             "classification_of_tumor": "not reported",
@@ -31082,6 +31592,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 9568,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21526,
             "classification_of_tumor": "not reported",
@@ -31194,6 +31706,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 8952,
             "classification_of_tumor": "not reported",
@@ -31306,6 +31820,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25784,
             "classification_of_tumor": "not reported",
@@ -31418,6 +31934,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3527,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17109,
             "classification_of_tumor": "not reported",
@@ -31529,6 +32047,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1665,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16879,
             "classification_of_tumor": "not reported",
@@ -31639,6 +32159,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16896,
             "classification_of_tumor": "not reported",
@@ -31723,6 +32245,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 796,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23091,
             "classification_of_tumor": "not reported",
@@ -31834,6 +32358,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27009,
             "classification_of_tumor": "not reported",
@@ -31946,6 +32472,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25069,
             "classification_of_tumor": "not reported",
@@ -32058,6 +32586,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 18,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22778,
             "classification_of_tumor": "not reported",
@@ -32170,6 +32700,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1365,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28364,
             "classification_of_tumor": "not reported",
@@ -32283,6 +32815,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2765,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20223,
             "classification_of_tumor": "not reported",
@@ -32462,6 +32996,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4107,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 10017,
             "classification_of_tumor": "not reported",
@@ -32573,6 +33109,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 17443,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -32685,6 +33223,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 360,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24263,
             "classification_of_tumor": "not reported",
@@ -32796,6 +33336,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2639,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19644,
             "classification_of_tumor": "not reported",
@@ -32907,6 +33449,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2296,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25711,
             "classification_of_tumor": "not reported",
@@ -33018,6 +33562,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1620,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26237,
             "classification_of_tumor": "not reported",
@@ -33129,6 +33675,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17220,
             "classification_of_tumor": "not reported",
@@ -33241,6 +33789,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 11252,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18779,
             "classification_of_tumor": "not reported",
@@ -33352,6 +33902,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2884,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23784,
             "classification_of_tumor": "not reported",
@@ -33463,6 +34015,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29501,
             "classification_of_tumor": "not reported",
@@ -33583,6 +34137,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14259,
             "classification_of_tumor": "not reported",
@@ -33713,6 +34269,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1164,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24032,
             "classification_of_tumor": "not reported",
@@ -33824,6 +34382,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5487,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 6831,
             "classification_of_tumor": "not reported",
@@ -33943,6 +34503,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20867,
             "classification_of_tumor": "not reported",
@@ -34073,6 +34635,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 977,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23773,
             "classification_of_tumor": "not reported",
@@ -34184,6 +34748,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28916,
             "classification_of_tumor": "not reported",
@@ -34296,6 +34862,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5318,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14305,
             "classification_of_tumor": "not reported",
@@ -34407,6 +34975,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1429,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20979,
             "classification_of_tumor": "not reported",
@@ -34518,6 +35088,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 17830,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -34632,6 +35204,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23344,
             "classification_of_tumor": "not reported",
@@ -34870,6 +35444,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28805,
             "classification_of_tumor": "not reported",
@@ -34982,6 +35558,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26540,
             "classification_of_tumor": "not reported",
@@ -35094,6 +35672,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 345,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24192,
             "classification_of_tumor": "not reported",
@@ -35215,6 +35795,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1124,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24868,
             "classification_of_tumor": "not reported",
@@ -35393,6 +35975,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 741,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21519,
             "classification_of_tumor": "not reported",
@@ -35505,6 +36089,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1136,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19105,
             "classification_of_tumor": "not reported",
@@ -35638,6 +36224,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 7563,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 12474,
             "classification_of_tumor": "not reported",
@@ -35765,6 +36353,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1505,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24087,
             "classification_of_tumor": "not reported",
@@ -37743,6 +38333,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 399,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20698,
             "classification_of_tumor": "not reported",
@@ -37877,6 +38469,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24066,
             "classification_of_tumor": "not reported",
@@ -37989,6 +38583,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 22254,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -38101,6 +38697,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16041,
             "classification_of_tumor": "not reported",
@@ -38221,6 +38819,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1264,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18220,
             "classification_of_tumor": "not reported",
@@ -38350,6 +38950,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23833,
             "classification_of_tumor": "not reported",
@@ -38462,6 +39064,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1794,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20942,
             "classification_of_tumor": "not reported",
@@ -38573,6 +39177,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29212,
             "classification_of_tumor": "not reported",
@@ -38685,6 +39291,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6666,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23711,
             "classification_of_tumor": "not reported",
@@ -38796,6 +39404,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 403,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20058,
             "classification_of_tumor": "not reported",
@@ -38930,6 +39540,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1562,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27463,
             "classification_of_tumor": "not reported",
@@ -39041,6 +39653,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 21,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26044,
             "classification_of_tumor": "not reported",
@@ -39152,6 +39766,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21688,
             "classification_of_tumor": "not reported",
@@ -39264,6 +39880,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 14,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27124,
             "classification_of_tumor": "not reported",
@@ -39375,6 +39993,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25926,
             "classification_of_tumor": "not reported",
@@ -39487,6 +40107,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1966,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21552,
             "classification_of_tumor": "not reported",
@@ -39598,6 +40220,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17511,
             "classification_of_tumor": "not reported",
@@ -39710,6 +40334,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3826,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27095,
             "classification_of_tumor": "not reported",
@@ -39821,6 +40447,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": null,
             "classification_of_tumor": "not reported",
@@ -39931,6 +40559,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 825,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25219,
             "classification_of_tumor": "not reported",
@@ -40043,6 +40673,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27604,
             "classification_of_tumor": "not reported",
@@ -40155,6 +40787,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22200,
             "classification_of_tumor": "not reported",
@@ -40267,6 +40901,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 435,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28510,
             "classification_of_tumor": "not reported",
@@ -40379,6 +41015,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4129,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 5684,
             "classification_of_tumor": "not reported",
@@ -40491,6 +41129,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_recurrence": null,
+            "days_to_last_follow_up": null,
             "age_at_diagnosis": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -40651,6 +41291,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1887,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11744,
             "classification_of_tumor": "not reported",
@@ -40762,6 +41404,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2051,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30084,
             "classification_of_tumor": "not reported",
@@ -40845,6 +41489,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2270,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30602,
             "classification_of_tumor": "not reported",
@@ -40957,6 +41603,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 650,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27124,
             "classification_of_tumor": "not reported",
@@ -41068,6 +41716,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 24450,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -41179,6 +41829,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2767,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24683,
             "classification_of_tumor": "not reported",
@@ -41291,6 +41943,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 766,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25582,
             "classification_of_tumor": "not reported",
@@ -41402,6 +42056,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3514,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25085,
             "classification_of_tumor": "not reported",
@@ -41513,6 +42169,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 266,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20458,
             "classification_of_tumor": "not reported",
@@ -41625,6 +42283,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20021,
             "classification_of_tumor": "not reported",
@@ -41747,6 +42407,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25856,
             "classification_of_tumor": "not reported",
@@ -42083,6 +42745,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22702,
             "classification_of_tumor": "not reported",
@@ -42212,6 +42876,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23663,
             "classification_of_tumor": "not reported",
@@ -42296,6 +42962,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15880,
             "classification_of_tumor": "not reported",
@@ -42416,6 +43084,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5299,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 10707,
             "classification_of_tumor": "not reported",
@@ -42545,6 +43215,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14935,
             "classification_of_tumor": "not reported",
@@ -42657,6 +43329,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 25725,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -42769,6 +43443,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4086,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19852,
             "classification_of_tumor": "not reported",
@@ -42888,6 +43564,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1429,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20354,
             "classification_of_tumor": "not reported",
@@ -43018,6 +43696,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17668,
             "classification_of_tumor": "not reported",
@@ -43130,6 +43810,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 772,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24872,
             "classification_of_tumor": "not reported",
@@ -43241,6 +43923,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3082,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25869,
             "classification_of_tumor": "not reported",
@@ -43351,6 +44035,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 490,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28092,
             "classification_of_tumor": "not reported",
@@ -43434,6 +44120,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1368,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23286,
             "classification_of_tumor": "not reported",
@@ -43546,6 +44234,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24692,
             "classification_of_tumor": "not reported",
@@ -43658,6 +44348,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 362,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 24408,
             "classification_of_tumor": "not reported",
@@ -43769,6 +44461,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 546,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29216,
             "classification_of_tumor": "not reported",
@@ -43880,6 +44574,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28175,
             "classification_of_tumor": "not reported",
@@ -43993,6 +44689,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1496,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 27498,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -44154,6 +44852,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 717,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29801,
             "classification_of_tumor": "not reported",
@@ -44265,6 +44965,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 28824,
             "classification_of_tumor": "not reported",
@@ -44376,6 +45078,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1035,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29324,
             "classification_of_tumor": "not reported",
@@ -44459,6 +45163,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 210,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15804,
             "classification_of_tumor": "not reported",
@@ -44570,6 +45276,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 703,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23940,
             "classification_of_tumor": "not reported",
@@ -44681,6 +45389,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25095,
             "classification_of_tumor": "not reported",
@@ -44801,6 +45511,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1409,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21281,
             "classification_of_tumor": "not reported",
@@ -44929,6 +45641,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11599,
             "classification_of_tumor": "not reported",
@@ -45013,6 +45727,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25930,
             "classification_of_tumor": "not reported",
@@ -45125,6 +45841,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 839,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15342,
             "classification_of_tumor": "not reported",
@@ -45236,6 +45954,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23288,
             "classification_of_tumor": "not reported",
@@ -45348,6 +46068,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20570,
             "classification_of_tumor": "not reported",
@@ -45460,6 +46182,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 359,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 9379,
             "classification_of_tumor": "not reported",
@@ -45571,6 +46295,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 853,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26240,
             "classification_of_tumor": "not reported",
@@ -45682,6 +46408,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 0,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 32872,
             "classification_of_tumor": "not reported",
@@ -45793,6 +46521,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17788,
             "classification_of_tumor": "not reported",
@@ -45905,6 +46635,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 9344,
             "classification_of_tumor": "not reported",
@@ -46017,6 +46749,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26145,
             "classification_of_tumor": "not reported",
@@ -46129,6 +46863,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1089,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16736,
             "classification_of_tumor": "not reported",
@@ -46239,6 +46975,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 831,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29380,
             "classification_of_tumor": "not reported",
@@ -46322,6 +47060,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 5088,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16701,
             "classification_of_tumor": "not reported",
@@ -46434,6 +47174,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 390,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21239,
             "classification_of_tumor": "not reported",
@@ -46545,6 +47287,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": null,
             "classification_of_tumor": "not reported",
@@ -46655,6 +47399,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 591,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27114,
             "classification_of_tumor": "not reported",
@@ -46766,6 +47512,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3151,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15695,
             "classification_of_tumor": "not reported",
@@ -46877,6 +47625,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30163,
             "classification_of_tumor": "not reported",
@@ -46989,6 +47739,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13297,
             "classification_of_tumor": "not reported",
@@ -47101,6 +47853,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": null,
             "classification_of_tumor": "not reported",
@@ -47211,6 +47965,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1643,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 21920,
             "classification_of_tumor": "not reported",
@@ -47322,6 +48078,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1940,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19961,
             "classification_of_tumor": "not reported",
@@ -47433,6 +48191,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 323,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23353,
             "classification_of_tumor": "not reported",
@@ -47544,6 +48304,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 478,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 12679,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -47656,6 +48418,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 278,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20910,
             "classification_of_tumor": "not reported",
@@ -47789,6 +48553,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22409,
             "classification_of_tumor": "not reported",
@@ -47901,6 +48667,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15947,
             "classification_of_tumor": "not reported",
@@ -48013,6 +48781,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3808,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13296,
             "classification_of_tumor": "not reported",
@@ -48138,6 +48908,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1888,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27255,
             "classification_of_tumor": "not reported",
@@ -48281,6 +49053,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 214,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27364,
             "classification_of_tumor": "not reported",
@@ -48392,6 +49166,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2193,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 30623,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -48503,6 +49279,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1010,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 11032,
             "classification_of_tumor": "not reported",
@@ -48614,6 +49392,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 405,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27938,
             "classification_of_tumor": "not reported",
@@ -48724,6 +49504,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13325,
             "classification_of_tumor": "not reported",
@@ -48807,6 +49589,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 27476,
             "classification_of_tumor": "not reported",
@@ -48891,6 +49675,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 7,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 21767,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -49002,6 +49788,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4897,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 10185,
             "classification_of_tumor": "not reported",
@@ -49113,6 +49901,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2076,
+            "days_to_recurrence": null,
             "age_at_diagnosis": 20978,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "classification_of_tumor": "not reported",
@@ -49224,6 +50014,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1949,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15896,
             "classification_of_tumor": "not reported",
@@ -49335,6 +50127,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1482,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14498,
             "classification_of_tumor": "not reported",
@@ -49446,6 +50240,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1658,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19216,
             "classification_of_tumor": "not reported",
@@ -49557,6 +50353,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 6940,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23131,
             "classification_of_tumor": "not reported",
@@ -49668,6 +50466,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 31351,
             "classification_of_tumor": "not reported",
@@ -49780,6 +50580,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3176,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 15159,
             "classification_of_tumor": "not reported",
@@ -49891,6 +50693,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 441,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18157,
             "classification_of_tumor": "not reported",
@@ -50002,6 +50806,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18841,
             "classification_of_tumor": "not reported",
@@ -50114,6 +50920,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 594,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 23157,
             "classification_of_tumor": "not reported",
@@ -50226,6 +51034,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1948,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17319,
             "classification_of_tumor": "not reported",
@@ -50337,6 +51147,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 30176,
             "classification_of_tumor": "not reported",
@@ -50449,6 +51261,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 4195,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22287,
             "classification_of_tumor": "not reported",
@@ -50560,6 +51374,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 464,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 13332,
             "classification_of_tumor": "not reported",
@@ -50671,6 +51487,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20476,
             "classification_of_tumor": "not reported",
@@ -50784,6 +51602,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 678,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 14489,
             "classification_of_tumor": "not reported",
@@ -50945,6 +51765,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 19175,
             "classification_of_tumor": "not reported",
@@ -51057,6 +51879,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 1926,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 29859,
             "classification_of_tumor": "not reported",
@@ -51169,6 +51993,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 3781,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 17196,
             "classification_of_tumor": "not reported",
@@ -51279,6 +52105,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 20963,
             "classification_of_tumor": "not reported",
@@ -51362,6 +52190,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 26435,
             "classification_of_tumor": "not reported",
@@ -51446,6 +52276,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 2703,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 22940,
             "classification_of_tumor": "not reported",
@@ -51565,6 +52397,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 16540,
             "classification_of_tumor": "not reported",
@@ -51696,6 +52530,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": null,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 18843,
             "classification_of_tumor": "not reported",
@@ -51859,6 +52695,8 @@
         "diagnoses": [
           {
             "tissue_or_organ_of_origin": "Skin, NOS",
+            "days_to_last_follow_up": 81,
+            "days_to_recurrence": null,
             "primary_diagnosis": "Malignant melanoma, NOS",
             "age_at_diagnosis": 25537,
             "classification_of_tumor": "not reported",

@@ -6,7 +6,7 @@ json_data_path: str = "./reconstructedData.json"
 with open(json_data_path, 'r') as f:
     json_data = json.load(f)
 
-with open("newData.json", 'r') as f:
+with open("test3.json", 'r') as f:
     slide_data = json.load(f)
 
 def clean_slide_data(data: dict):

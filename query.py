@@ -43,6 +43,8 @@ CASE_FIELDS = [
     'diagnoses.sites_of_involvement',
     'diagnoses.tissue_or_organ_of_origin',
     'diagnoses.tumor_stage',
+    'diagnoses.days_to_last_follow_up',
+    'diagnoses.days_to_recurrence',
 
     'demographic.vital_status',
     'demographic.cause_of_death',
@@ -310,7 +312,12 @@ if __name__ == '__main__':
                     patient["prior_malignancy"] = output["data"]["hits"][i]["diagnoses"][0]["prior_malignancy"]
                 if "primary_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
                     patient["primary_diagnosis"] = output["data"]["hits"][i]["diagnoses"][0]["primary_diagnosis"]
-
+                if "days_to_last_follow_up" in output["data"]["hits"][i]["diagnoses"][0]:
+                    if output["data"]["hits"][i]["diagnoses"][0]["days_to_last_follow_up"] is not None:
+                        patient["years_to_last_follow_up"] = (output["data"]["hits"][i]["diagnoses"][0]["days_to_last_follow_up"] / 365)
+                if "days_to_recurrence" in output["data"]["hits"][i]["diagnoses"][0]:
+                    if output["data"]["hits"][i]["diagnoses"][0]["days_to_recurrence"] is not None:
+                        patient["years_to_recurrence"] = (output["data"]["hits"][i]["diagnoses"][0]["days_to_recurrence"] / 365)
             sample = data["portions"][0]["slides"][0]
             patient["slides"] = {}
             currentSlideID = sample["slide_id"]

@@ -10,13 +10,6 @@ import shutil
 import subprocess
 from tqdm import tqdm
 
-clientID = "1006106238032-pkeodfsvnfl5ed84bcdkh2uv5f1f75e9.apps.googleusercontent.com"
-clientSecret = "Yg9aCQnU-MtqK1lVtlitgiOl"
-gauth = GoogleAuth()
-drive = GoogleDrive(gauth)
-
-gfile = drive.CreateFile({'parents': [{'id': '1_ft4g8_ehX_XUn5T-vySvguKssWEOztP'}]})
-
 # cfg_path = "rclone.conf"
 # with open(cfg_path) as f:
 #    cfg = f.read()

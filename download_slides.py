@@ -1,93 +1,86 @@
 import requests
 import json
-import sys
-from pathlib import Path
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-import os
-import shutil
-# import rclone
 import subprocess
+import os
 from tqdm import tqdm
-
-# cfg_path = "rclone.conf"
-# with open(cfg_path) as f:
-#    cfg = f.read()
-# print(cfg)
-# result = rclone.with_config(cfg).listremotes()
-# print(result)
-# result.listremotes()
-# print(result.get('out'))
-# result.run_cmd("rclone config")
-
-# cfg = """[local]
-# type = local
-# nounc = true"""
-# result = rclone.with_config(cfg).listremotes()
-
-# print(result.get('code'))
+import concurrent.futures
+import tempfile
 
 path_to_slides_data = "reconstructedData.json"
 endpoint = "https://api.gdc.cancer.gov/data/"
 
-with open(path_to_slides_data, 'r') as f:
-    slides_data = json.load(f)
 
-def download_slide(hit_id, slide_id, file_id):
-    output_path = f"slides/{hit_id}/{file_id}/"
-    Path(output_path).mkdir(parents=True, exist_ok=True)  # create folders if they don't exist
+def fetch_slides(slides_path):
+    output_list = []
+    with open(slides_path, 'r') as infile:
+        slides_data = json.load(infile)
+
+    patients = slides_data["data"]  # all slides
+    for patient in patients:
+        patient_id = patient["patient_id"]
+        data = patient["slides"]
+        if "slide_id" not in data:
+            print("slide ID for " + patient_id + " is missing")
+            continue
+        if "case_id" not in data:
+            print("case ID for " + patient_id + " is missing")
+            continue
+        if "file_id" not in data:
+            print("file ID for " + patient_id + " is missing")
+            continue
+        output_list.append((data["case_id"], data["slide_id"], data["file_id"]))
+    return output_list
+
+
+def download_slide(file_id):
+    if not os.path.exists("./_tmp"):
+        os.makedirs("./_tmp")
+    temporary_file = tempfile.NamedTemporaryFile(dir="./_tmp")
+    # output_path = f"slides/{hit_id}/{file_id}/"
+    # Path(output_path).mkdir(parents=True, exist_ok=True)  # create folders if they don't exist
 
     r = requests.get(endpoint + file_id, stream=True)
     total_length = r.headers.get('content-length')
 
-    with open(output_path + file_id + ".svs", "wb") as f:
-        if total_length is None:  # no content length header
-            f.write(r.content)
-        else:
-            chunk_size = 1024 * 1024
-            for content_chunk in tqdm(r.iter_content(chunk_size=chunk_size), total=int(total_length)//chunk_size):
-                f.write(content_chunk)
-
-# print(slides_data)
-
-patients = slides_data["data"]  # all slides
-x = 0
-for patient in patients:
-    patientID = patient["patient_id"]
-    data = patient["slides"]
-    case_id = data["case_id"]
-    file_id = data["file_id"]
-    if "slide_id" not in data:
-        print("slide ID for " + patientID + " is missing")
-        continue
-    if "case_id" not in data:
-        print("case ID for " + patientID + " is missing")
-        continue
-    if "file_id" not in data:
-        print("file ID for " + patientID + " is missing")
-        continue
-    print(f"Getting Slides for case id: " + case_id)
-    print(f"    downloading slide with id " + data["slide_id"] + " and file id " + file_id)
-    download_slide(case_id, data["slide_id"], file_id)
-
-    filepath = "slides/" + case_id + "/" + file_id + "/"
-    filename = filepath + file_id + ".svs"
-    rclone_path = "/home/rajesh/Downloads/rclone-v1.54.0-linux-amd64/rclone"
-    data_path = "/home/rajesh/Documents/Year_3/COMP0031/gdc/" + filename
-    print(data_path)
-
-    subprocess.run([rclone_path, "copy", data_path, "GCDData:/Data", "-Pv", "--max-size", "1M", "--transfers=16"])
-
-    # gfile.SetContentFile(filename)
-    # gfile.Upload()
-    # print(filename)
-
-    if os.path.exists(filename):
-        # print("yep it exists")
-        shutil.rmtree("slides")
+    if total_length is None:  # no content length header
+        temporary_file.write(r.content)
     else:
-        print("file dont exist m8")
-    # sys.exit()
-    x+=1
-    print("i have done this for the " + str(x) + " time")
+        chunk_size = 1024 * 1024
+        for content_chunk in r.iter_content(chunk_size=chunk_size):
+            temporary_file.write(content_chunk)
 
+    return temporary_file
+
+
+def download_and_upload(file_id):
+    slide_file = download_slide(file_id)
+
+    subprocess.run(["rclone", "copyto", slide_file.name, f"GCDData:{file_id}.svs", "-q", "--transfers=1"])
+    slide_file.close()
+
+
+if __name__ == "__main__":
+    # list of tuples. each tuple contains case_id, slide_id, and file_id
+    slides = fetch_slides(path_to_slides_data)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+        future_to_slide = {executor.submit(download_and_upload, slide_meta[2]): slide_meta for slide_meta in slides}
+        pbar = tqdm(total=len(future_to_slide))
+        for future in concurrent.futures.as_completed(future_to_slide):
+            pbar.update(1)
+            pbar.refresh()
+            # slide_meta = future_to_slide[future]
+            # print(f"Done downloading and uploading file {slide_meta[2]}")
+            # slide_file = future.result()
+            # print(f"Downloaded {slide_meta[2]}")
+            # try:
+            #     # replace f"local:tempdir/Data/slides/{slide_meta[0]}/{slide_meta[2]}.svs" with the actual path you
+            #     # want to take. For example, f"GCDData:/Data/slides/{slide_meta[0]}/{slide_meta[2]}". Up to you.
+            #
+            #     # also, I'm pretty sure your previous file naming scheme was wrong, it never used slide_id and only
+            #     # used file_id. It also created a directory called file_id despite the filename _also_ being file_id
+            #
+            #     print(f"Uploaded {slide_meta[2]}")
+            # noinspection PyBroadException
+            # except:
+            #     print("shit")

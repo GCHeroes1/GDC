@@ -282,6 +282,8 @@ if __name__ == '__main__':
                 dead+=1
         for data in output["data"]["hits"][i]["samples"]:
             patient = {}
+            death_years = 0
+            alive_years = 0
             patient["patient_id"] = output["data"]["hits"][i]["id"]
             if "slide_ids" in output["data"]["hits"][i]:
                 numberOfSlides+=len(output["data"]["hits"][i]["slide_ids"])
@@ -293,10 +295,15 @@ if __name__ == '__main__':
                     patient["vital_status"] = "Dead"
                 if "days_to_death" in output["data"]["hits"][i]["demographic"]:
                     if output["data"]["hits"][i]["demographic"]["days_to_death"] is not None:
-                        timeTillDeath.append((output["data"]["hits"][i]["demographic"]["days_to_death"]/365))
-                        patient["years_to_death"] = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
+                        death_years = (output["data"]["hits"][i]["demographic"]["days_to_death"]/365)
+                        timeTillDeath.append(death_years)
+                        patient["years_to_death"] = death_years
 
             if "diagnoses" in output["data"]["hits"][i]:
+                if "days_to_last_follow_up" in output["data"]["hits"][i]["diagnoses"][0]:
+                    if output["data"]["hits"][i]["diagnoses"][0]["days_to_last_follow_up"] is not None:
+                        alive_years = (output["data"]["hits"][i]["diagnoses"][0]["days_to_last_follow_up"] / 365)
+                        patient["years_to_last_follow_up"] = alive_years
                 if "age_at_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
                     if output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"] is not None:
                         agesAtDiagnosis.append((output["data"]["hits"][i]["diagnoses"][0]["age_at_diagnosis"]/365))
@@ -308,17 +315,22 @@ if __name__ == '__main__':
                 if "tissue_or_organ_of_origin" in output["data"]["hits"][i]["diagnoses"][0]:
                     patient["tissue_or_organ_of_origin"] = output["data"]["hits"][i]["diagnoses"][0]["tissue_or_organ_of_origin"]
                 if "site_of_resection_or_biopsy" in output["data"]["hits"][i]["diagnoses"][0]:
-                    patient["site_of_resection_or_biopsy"] = output["data"]["hits"][i]["diagnoses"][0]["site_of_resection_or_biopsy"]
+                    site = output["data"]["hits"][i]["diagnoses"][0]["site_of_resection_or_biopsy"]
+                    patient["site_of_resection_or_biopsy"] = site
+                    if "lymph" in site.lower():
+                        patient["biopsy_tissue_type"] = "Lymph"
+                    elif "skin" in site.lower():
+                        patient["biopsy_tissue_type"] = "Skin"
+                    else:
+                        patient["biopsy_tissue_type"] = "N/A"
                 if "prior_malignancy" in output["data"]["hits"][i]["diagnoses"][0]:
                     patient["prior_malignancy"] = output["data"]["hits"][i]["diagnoses"][0]["prior_malignancy"]
                 if "primary_diagnosis" in output["data"]["hits"][i]["diagnoses"][0]:
                     patient["primary_diagnosis"] = output["data"]["hits"][i]["diagnoses"][0]["primary_diagnosis"]
-                if "days_to_last_follow_up" in output["data"]["hits"][i]["diagnoses"][0]:
-                    if output["data"]["hits"][i]["diagnoses"][0]["days_to_last_follow_up"] is not None:
-                        patient["years_to_last_follow_up"] = (output["data"]["hits"][i]["diagnoses"][0]["days_to_last_follow_up"] / 365)
-                if "days_to_recurrence" in output["data"]["hits"][i]["diagnoses"][0]:
-                    if output["data"]["hits"][i]["diagnoses"][0]["days_to_recurrence"] is not None:
-                        patient["years_to_recurrence"] = (output["data"]["hits"][i]["diagnoses"][0]["days_to_recurrence"] / 365)
+            patient["years_survived"] = max(death_years, alive_years)
+                # if "days_to_recurrence" in output["data"]["hits"][i]["diagnoses"][0]:
+                #     if output["data"]["hits"][i]["diagnoses"][0]["days_to_recurrence"] is not None:
+                #         patient["years_to_recurrence"] = (output["data"]["hits"][i]["diagnoses"][0]["days_to_recurrence"] / 365)
             sample = data["portions"][0]["slides"][0]
             patient["slides"] = {}
             currentSlideID = sample["slide_id"]
@@ -341,18 +353,18 @@ if __name__ == '__main__':
                 patient["slides"]["section_location"] = sample["section_location"]
             if "percent_tumor_cells" in sample:
                 patient["slides"]["percent_tumor_cells"] = sample["percent_tumor_cells"]
-            if "number_proliferating_cells" in sample:
-                patient["slides"]["number_proliferating_cells"] = sample["number_proliferating_cells"]
-            if "percent_eosinophil_infiltration" in sample:
-                patient["slides"]["percent_eosinophil_infiltration"] = sample["percent_eosinophil_infiltration"]
-            if "percent_inflam_infiltration" in sample:
-                patient["slides"]["percent_inflam_infiltration"] = sample["percent_inflam_infiltration"]
+            # if "number_proliferating_cells" in sample:
+            #     patient["slides"]["number_proliferating_cells"] = sample["number_proliferating_cells"]
+            # if "percent_eosinophil_infiltration" in sample:
+            #     patient["slides"]["percent_eosinophil_infiltration"] = sample["percent_eosinophil_infiltration"]
+            # if "percent_inflam_infiltration" in sample:
+            #     patient["slides"]["percent_inflam_infiltration"] = sample["percent_inflam_infiltration"]
             if "percent_neutrophil_infiltration" in sample:
                 patient["slides"]["percent_neutrophil_infiltration"] = sample["percent_neutrophil_infiltration"]
             if "percent_lymphocyte_infiltration" in sample:
                 patient["slides"]["percent_lymphocyte_infiltration"] = sample["percent_lymphocyte_infiltration"]
-            if "percent_granulocyte_infiltration" in sample:
-                patient["slides"]["percent_granulocyte_infiltration"] = sample["percent_granulocyte_infiltration"]
+            # if "percent_granulocyte_infiltration" in sample:
+            #     patient["slides"]["percent_granulocyte_infiltration"] = sample["percent_granulocyte_infiltration"]
             if "percent_necrosis" in sample:
                 patient["slides"]["percent_necrosis"] = sample["percent_necrosis"]
             if "percent_normal_cells" in sample:

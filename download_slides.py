@@ -55,7 +55,7 @@ def download_slide(file_id):
 def download_and_upload(file_id):
     slide_file = download_slide(file_id)
 
-    subprocess.run(["rclone", "copyto", slide_file.name, f"GCDData:{file_id}.svs", "-q", "--transfers=1"])
+    subprocess.run(["rclone", "copyto", slide_file.name, f"GCDData:/Data/{file_id}.svs", "-q", "--transfers=1"])
     slide_file.close()
 
 

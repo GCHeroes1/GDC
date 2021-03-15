@@ -3,109 +3,130 @@ import openslide
 from openslide import deepzoom
 from image_processing import calculate_tissue_percentage
 import multiprocessing
-import tqdm
+from tqdm import tqdm
+# import tqdm
+from concurrent import futures
 
-sample_image_path: str = './71208712-2893-4404-9cef-ff090774d057/71208712-2893-4404-9cef-ff090774d057.svs'
+sample_image_path: str = './0a5cc262-c5e2-4b25-a9ac-1560e156fa6d.svs'
 
 multiprocessing.set_start_method("fork")
 
+
 def slice_image(slide: openslide, tile_height: int, tile_width: int):
-    slide_width, slide_height = slide.dimensions
-    print("starting image slicing")
-    number_of_widths = slide_width // tile_width
-    number_of_heights = slide_height // tile_height
-    print(f'Number of widths: {number_of_widths}')
-    print(f'Number of heights: {number_of_heights}')
-    counter = 0
-    progress_counter = 0
-    total_slides = number_of_heights * number_of_widths
-    print(f'total slides to go through: {total_slides}')
-    for width_index in range(number_of_widths):
-        width = width_index * tile_width
-        for height_index in range(number_of_heights):
-            height = height_index * tile_height
-            # print("creating tile")
-            # print(f'top left corner: ({width}, {height}), bottom right corner: ({width + tile_width}, {height + tile_height})')
-            tile = slide.read_region((width, height), 3, (tile_width, tile_height))
-            tissue_percentage = calculate_tissue_percentage(tile, threshold=50)
-            print(f'checking slice {progress_counter} / {total_slides}')
-            if tissue_percentage > 50:
-                print(f'tissue with percentage {tissue_percentage} is being saved as tile{counter}.png')
-                tile.save(f'tiles/tile{counter}.png')
-                counter += 1
-            else:
-                print(f'tissue with percentage {tissue_percentage} is TOO LOW to be useful')
-            print()
-            progress_counter += 1
+	slide_width, slide_height = slide.dimensions
+	print("starting image slicing")
+	number_of_widths = slide_width // tile_width
+	number_of_heights = slide_height // tile_height
+	print(f'Number of widths: {number_of_widths}')
+	print(f'Number of heights: {number_of_heights}')
+	counter = 0
+	progress_counter = 0
+	total_slides = number_of_heights * number_of_widths
+	print(f'total slides to go through: {total_slides}')
+	for width_index in range(number_of_widths):
+		width = width_index * tile_width
+		for height_index in range(number_of_heights):
+			height = height_index * tile_height
+			# print("creating tile")
+			# print(f'top left corner: ({width}, {height}), bottom right corner: ({width + tile_width}, {height + tile_height})')
+			tile = slide.read_region((width, height), 3, (tile_width, tile_height))
+			tissue_percentage = calculate_tissue_percentage(tile, threshold=50)
+			print(f'checking slice {progress_counter} / {total_slides}')
+			if tissue_percentage > 50:
+				print(f'tissue with percentage {tissue_percentage} is being saved as tile{counter}.png')
+				tile.save(f'tiles/tile{counter}.png')
+				counter += 1
+			else:
+				print(f'tissue with percentage {tissue_percentage} is TOO LOW to be useful')
+			print()
+			progress_counter += 1
 
 
 def slice_image_parallel(slide_path: openslide, tile_height: int, tile_width: int, tissue_threshold_percentage: int):
-    slide = openslide.OpenSlide(slide_path)
-    slide_width, slide_height = slide.dimensions
-    print("starting image slicing")
-    number_of_widths = slide_width // tile_width
-    number_of_heights = slide_height // tile_height
-    print(f'Number of widths: {number_of_widths}')
-    print(f'Number of heights: {number_of_heights}')
-    counter = 0
-    progress_counter = 0
-    total_slides = number_of_heights * number_of_widths
-    jobs_instructions = list()
-    for width_index in range(number_of_widths):
-        width = width_index * tile_width
-        for height_index in range(number_of_heights):
-            height = height_index * tile_height
-            jobs_instructions.append((slide_path, counter, width, height, tile_width, tile_height, tissue_threshold_percentage))
-            counter += 1
-            # print("creating tile")
-            # print(f'top left corner: ({width}, {height}), bottom right corner: ({width + tile_width}, {height + tile_height})')
-            
-    pool = multiprocessing.Pool(processes=10)
-    for _ in tqdm.tqdm(pool.imap(classify_tile, jobs_instructions), total=len(jobs_instructions)):
-        pass
-    pool.close()
+	slide = openslide.OpenSlide(slide_path)
+	slide_width, slide_height = slide.dimensions
+	print("starting image slicing")
+	number_of_widths = slide_width // tile_width
+	number_of_heights = slide_height // tile_height
+	print(f'Number of widths: {number_of_widths}')
+	print(f'Number of heights: {number_of_heights}')
+	counter = 0
+	progress_counter = 0
+	total_slides = number_of_heights * number_of_widths
+	jobs_instructions = list()
+	for width_index in range(number_of_widths):
+		width = width_index * tile_width
+		for height_index in range(number_of_heights):
+			height = height_index * tile_height
+			jobs_instructions.append(
+					(slide_path, counter, width, height, tile_width, tile_height, tissue_threshold_percentage))
+			counter += 1
+		# print("creating tile")
+		# print(f'top left corner: ({width}, {height}), bottom right corner: ({width + tile_width}, {height + tile_height})')
+
+	pool = multiprocessing.Pool(processes=10)
+	for _ in tqdm.tqdm(pool.imap(classify_tile, jobs_instructions), total=len(jobs_instructions)):
+		pass
+	pool.close()
 
 
 def slice_image_parallel2(slide_path: openslide, tile_height: int, tile_width: int, tissue_threshold_percentage: int):
-    slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=5000, overlap=1)
-    tiles_info_per_level = slide.level_tiles
-    number_of_levels = len(tiles_info_per_level)
-    number_of_widths, number_of_heights = tiles_info_per_level[number_of_levels - 1]
-    print(f'Number of widths: {number_of_widths}')
-    print(f'Number of heights: {number_of_heights}')
-    counter = 0
-    progress_counter = 0
-    total_slides = number_of_heights * number_of_widths
-    jobs_instructions = list()
-    for width_index in range(number_of_widths):
-        width = width_index * tile_width
-        for height_index in range(number_of_heights):
-            height = height_index * tile_height
-            jobs_instructions.append((slide_path, counter, width, height, tile_width, tile_height, tissue_threshold_percentage))
-            counter += 1
-            # print("creating tile")
-            # print(f'top left corner: ({width}, {height}), bottom right corner: ({width + tile_width}, {height + tile_height})')
-            
-    pool = multiprocessing.Pool(processes=4)
-    for _ in tqdm.tqdm(pool.imap(classify_tile, jobs_instructions), total=len(jobs_instructions)):
-        pass
-    pool.close()
+	slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=5000, overlap=1)
+	tiles_info_per_level = slide.level_tiles
+	number_of_levels = len(tiles_info_per_level)
+	number_of_widths, number_of_heights = tiles_info_per_level[number_of_levels - 1]
+	print(f'Number of widths: {number_of_widths}')
+	print(f'Number of heights: {number_of_heights}')
+	counter = 0
+	progress_counter = 0
+	total_slides = number_of_heights * number_of_widths
+	jobs_instructions = list()
+	for width_index in range(number_of_widths):
+		width = width_index * tile_width
+		for height_index in range(number_of_heights):
+			height = height_index * tile_height
+			jobs_instructions.append(
+					(slide_path, counter, width, height, tile_width, tile_height, tissue_threshold_percentage))
+			counter += 1
+		# print("creating tile")
+		# print(f'top left corner: ({width}, {height}), bottom right corner: ({width + tile_width}, {height + tile_height})')
+
+	# pool = multiprocessing.Pool(processes=1)
+	# for _ in tqdm.tqdm(pool.imap(classify_tile, jobs_instructions), total=len(jobs_instructions)):
+	#     pass
+	# pool.close()
+
+	p_bar = tqdm(total=len(jobs_instructions))
+	sl = openslide.OpenSlide(slide_path)
+	# with futures.ThreadPoolExecutor(max_workers=16) as executor:
+	# 	futures_to_jobs = {executor.submit(classify_tile, sl, job): job for job in jobs_instructions}
+	# 	for _ in futures.as_completed(futures_to_jobs):
+	# 		p_bar.update(1)
+	# 		p_bar.refresh()
+
+	for job in jobs_instructions:
+		classify_tile(sl, job)
+		p_bar.update(1)
+		p_bar.refresh()
+	# print(f"done with {future}")
 
 
 # x, y are the tile's top right corner coordinates
-def classify_tile(arguments):
-    slide_path, tile_number, x, y, tile_width, tile_height, tissue_threshold_percentage = arguments
-    slide = openslide.OpenSlide(slide_path)
-    # print(f'path: {slide_path}, tile number: {tile_number}, x: {x}, y: {y}, tile width: {tile_width}, tile height: {tile_height}')
-    tile = slide.read_region((x, y), 2, (tile_width, tile_height))
-    tissue_percentage = calculate_tissue_percentage(tile, threshold=tissue_threshold_percentage)
-    if tissue_percentage > tissue_threshold_percentage:
-        # print(f'tile number {tile_number} with percentage {tissue_percentage} is being saved as tile{tile_number}.png')
-        tile.save(f'tiles/tile{tile_number}.png')
-    # else:
-        # print(f'tile number {tile_number} with percentage {tissue_percentage} is TOO LOW to be useful')
-    # print()
+def classify_tile(slide_thing, arguments):
+	slide_path, tile_number, x, y, tile_width, tile_height, tissue_threshold_percentage = arguments
+	# print(f'path: {slide_path}, tile number: {tile_number},
+	# x: {x}, y: {y}, tile width: {tile_width}, tile height: {tile_height}')
+	tile = slide_thing.read_region((x, y), 2, (tile_width, tile_height))
+	tissue_percentage = calculate_tissue_percentage(tile, threshold=tissue_threshold_percentage)
+	# tissue_percentage = 100
+	if tissue_percentage > tissue_threshold_percentage:
+		# print(f'tile number {tile_number} with percentage {tissue_percentage} is being saved as tile{tile_number}.png')
+		tile.save(f'tiles/tile{tile_number}.png')
 
+
+# else:
+# print(f'tile number {tile_number} with percentage {tissue_percentage} is TOO LOW to be useful')
+# print()
 
 
 # READ IN SVS, READ A REGION OF IT AND SAVE IT. ONLY NEEDS TO BE DONE ONCE, THEN COMMENT IT OUT
@@ -113,7 +134,7 @@ slide = openslide.OpenSlide(sample_image_path)
 width, height = slide.dimensions
 print(f"slide dimensions: {slide.dimensions}")
 print(f"level count: {slide.level_count}")
-print(f"level dimensions: {slide.level_dimensions}") 
+print(f"level dimensions: {slide.level_dimensions}")
 # slice_image_parallel(sample_image_path, 3000, 3000, 50)
 # slice_image(slide, 3000, 3000)
 slice_image_parallel2(sample_image_path, 3000, 3000, 50)

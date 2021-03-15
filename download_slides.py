@@ -57,6 +57,14 @@ def download_and_upload(file_id):
 
     subprocess.run(["rclone", "copyto", slide_file.name, f"GCDData:/Data/{file_id}.svs", "-q", "--transfers=1"])
     slide_file.close()
+    # if agesurvived < 3:
+    #       if rng within 80%:
+    #           upload to "GCDData:/Data2/Classifier1/training
+    #       else:
+    #           upload to "GCDData:/Data2/Classifier1/validation
+    # else:
+    #       if rng within 80%:
+    #           upload to "GCDData:/Data2/Classifier2/training
 
 
 if __name__ == "__main__":

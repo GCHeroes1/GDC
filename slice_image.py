@@ -87,7 +87,7 @@ def classify_tile2(arguments):
 	slide_path, tile_number, x, y, tile_size, level, tissue_threshold_percentage, output_folder = arguments
 	slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=tile_size, overlap=1)
 	tile = slide.get_tile(level, (x,y))
-	tissue_percentage = calculate_tissue_percentage(tile, threshold=tissue_threshold_percentage)
+	tissue_percentage = calculate_tissue_percentage(tile)
 	if tissue_percentage > tissue_threshold_percentage:
 		tile.save(os.path.join(output_folder, f"tile{tile_number}.png"))
 
@@ -107,5 +107,5 @@ print(f'Highest quality level: {number_of_levels - 1}')
 print(f'Lowest quality level: {0}')
 
 # perform slicing
-slice_image_parallel2(sample_image_path, tile_size, 15, 50, 'tiles')
+slice_image_parallel2(sample_image_path, tile_size, 14, 50, 'tiles')
 

@@ -28,4 +28,4 @@ opencv-python
 torchvision
 tensorflow
 django-deepzoom
-
+imageio

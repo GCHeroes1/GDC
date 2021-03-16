@@ -16,28 +16,7 @@ def label_non_whitespace(img):
 
 
 # threshold (optional) for pixels number of pixels that should be tissue
-def calculate_tissue_percentage(img, threshold=None):
-	# img = img.convert("L")  # convert to greyscale
-	# # img = img.copy().convert("L")
-	# # tissue_pixels = 0
-	# # non_tissue_pixels = 0
-	# width = img.width
-	# height = img.height
-	# total_pixels = width * height
-	# tissue_pixels = 0
-	# non_tissue_pixels = 0
-	#
-	# for x in range(width):
-	# 	for y in range(height):
-	# 		if img.getpixel((x, y)) < 210:  # threshold value can be played around with
-	# 		# if img[x][y] < 210:  # threshold value can be played around with
-	# 			tissue_pixels += 1
-	# 		# else:
-	# 		# 	non_tissue_pixels += 1
-	# 		# if (threshold is not None and (((tissue_pixels / total_pixels) * 100 > threshold) or (
-	# 		# 		(non_tissue_pixels / total_pixels) * 100 > threshold))):
-	# 		# 	return 200
-
+def calculate_tissue_percentage(img):
 	img = np.array(img.convert("L"))
 	tissue_pixels = np.count_nonzero(img < 210)
 	total_pixels = img.size

@@ -34,7 +34,7 @@ def slice_image_parallel2(slide_path: str, tile_size_: int, level: int, tissue_t
                           output_folder: str, path_to_upload, file_id):
     slide_ = deepzoom.DeepZoomGenerator(openslide.open_slide(slide_path), tile_size=tile_size_, overlap=1)
     tiles_info_per_level = slide_.level_tiles
-    number_of_levels = len(tiles_info_per_level)
+    # number_of_levels = len(tiles_info_per_level)
     number_of_widths, number_of_heights = tiles_info_per_level[level]
     # print(f"level dimensions: {slide_.level_dimensions}")
     # print(f"tile dimensions: {slide_.get_tile_dimensions(17, (29, 0))}")
@@ -42,7 +42,7 @@ def slice_image_parallel2(slide_path: str, tile_size_: int, level: int, tissue_t
     # print(f"Number of heights: {number_of_heights}")
     # print(f"number of levels: {number_of_levels}")
     counter = 0
-    total_slides = number_of_heights * number_of_widths
+    # total_slides = number_of_heights * number_of_widths
     # print(f"total slides: {total_slides}")
     jobs_instructions = list()
     for width_index in range(number_of_widths):

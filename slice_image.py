@@ -57,7 +57,7 @@ def slice_image_parallel2(slide_path: openslide, tile_size: int, level: int, tis
 	number_of_levels = len(tiles_info_per_level)
 	number_of_widths, number_of_heights = tiles_info_per_level[level]
 	print(f"level dimensions: {slide.level_dimensions}")
-	print(f"tile dimensions: {slide.get_tile_dimensions(17, (29,0))}")
+	# print(f"tile dimensions: {slide.get_tile_dimensions(level, (29,0))}")
 	print(f"Number of widths: {number_of_widths}")
 	print(f"Number of heights: {number_of_heights}")
 	print(f"number of levels: {number_of_levels}")
@@ -85,16 +85,19 @@ def slice_image_parallel2(slide_path: openslide, tile_size: int, level: int, tis
 
 def classify_tile2(arguments):
 	slide_path, tile_number, x, y, tile_size, level, tissue_threshold_percentage, output_folder = arguments
-	slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=tile_size, overlap=1)
+	slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=tile_size, overlap=0)
 	tile = slide.get_tile(level, (x,y))
-	tissue_percentage = calculate_tissue_percentage(tile)
-	if tissue_percentage > tissue_threshold_percentage:
-		tile.save(os.path.join(output_folder, f"tile{tile_number}.png"))
+	tile_dimensions = slide.get_tile_dimensions(level, (x, y))
+	if tile_dimensions == (tile_size, tile_size):
+		print(f"tile {tile_number} dimensions: {tile_dimensions}")
+		tissue_percentage = calculate_tissue_percentage(tile)
+		if tissue_percentage > tissue_threshold_percentage:
+			tile.save(os.path.join(output_folder, f"tile{tile_number}.png"))
 
 
 
 
-sample_image_path: str = '71208712-2893-4404-9cef-ff090774d057/71208712-2893-4404-9cef-ff090774d057.svs'
+sample_image_path: str = './slides/2774b738-3f6c-420a-aa1e-f7fcf527097a.svs'
 tile_size=1000
 
 # explore image to find out how many levels there are, and decide which is best to use. Once decided, the code below can be commented out

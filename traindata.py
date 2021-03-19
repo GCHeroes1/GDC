@@ -13,10 +13,10 @@ import random
 from PIL import Image
 import os
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras import layers
-from tensorflow.keras.applications.inception_v3 import InceptionV3
-from tensorflow.keras.optimizers import RMSprop
+from tensorflow.python.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.python.keras import layers
+from tensorflow.python.keras.applications.inception_v3 import InceptionV3
+from tensorflow.python.keras.optimizers import RMSprop
 from tensorflow import keras
 
 
@@ -25,10 +25,12 @@ torch.cuda.empty_cache()
 torch.manual_seed(0)
 random.seed(0)
 
-# from google.colab import drive
-# drive.mount('/content/drive')
 
+#blaze
 root_dir = "/scratch0/NOT_BACKED_UP/tmp/GCDData/"
+#not blaze
+# root_dir = "/tmp/GCDData/"
+
 im = Image.open(f"{root_dir}skin_train_dir/late/00ded484-9e77-4242-96a3-b09996fd0231_11.png")
 width, height = im.size
 
@@ -41,8 +43,9 @@ lymph_validation_dir = f"{root_dir}lymph_validation_dir"
 train_datagen = ImageDataGenerator()
 test_datagen = ImageDataGenerator()
 
-b_s = 64 #batch_size
+b_s = 1 #batch_size
 len_train = len(os.listdir(lymph_train_dir + "/early")) + len(os.listdir(lymph_train_dir + "/late"))
+validation_steps = len(os.listdir(lymph_validation_dir + "/early")) + len(os.listdir(lymph_validation_dir + "/late"))//b_s
 # len_train
 s_s = len_train//b_s
 print("Batch size: " + str(b_s))
@@ -58,7 +61,7 @@ for layer in base_model.layers:
     layer.trainable = False
 
 x = layers.Flatten()(base_model.output)
-x = layers.Dense(1024, activation='relu')(x)
+x = layers.Dense(64, activation='relu')(x)
 x = layers.Dropout(0.2)(x)
 x = layers.Dense(1, activation='sigmoid')(x)
 
@@ -67,9 +70,9 @@ model = tf.keras.models.Model(base_model.input, x)
 model.compile(optimizer = RMSprop(lr=0.001), loss = 'binary_crossentropy', metrics = ['acc'])
 print("model compiled")
 
-inc_history = model.fit(train_generator, validation_data = validation_generator, steps_per_epoch = s_s, epochs = 10)
+inc_history = model.fit_generator(train_generator, validation_data = validation_generator, steps_per_epoch = s_s, epochs = 10, validation_steps=validation_steps)
 print("model trained")
 
-model.save('model_lymph')
+model.save("/scratch0/NOT_BACKED_UP/tmp/GCDModelLymph")
 
 # model = keras.models.load_model('model')

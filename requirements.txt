@@ -26,6 +26,5 @@ tqdm
 torch
 opencv-python
 torchvision
-tensorflow
 django-deepzoom
 imageio

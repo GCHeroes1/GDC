@@ -132,3 +132,10 @@ dmypy.json
 test[0-9]*.json
 slides_out.json
 slides_out.tsv
+*.svs
+tiles/*
+_tmp/*
+client_secrets.json
+gdcdata-5500f8c05aa2.json
+rclone.conf
+*.csv

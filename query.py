@@ -352,18 +352,10 @@ if __name__ == '__main__':
 				patient["slides"]["section_location"] = sample["section_location"]
 			if "percent_tumor_cells" in sample:
 				patient["slides"]["percent_tumor_cells"] = sample["percent_tumor_cells"]
-			# if "number_proliferating_cells" in sample:
-			#     patient["slides"]["number_proliferating_cells"] = sample["number_proliferating_cells"]
-			# if "percent_eosinophil_infiltration" in sample:
-			#     patient["slides"]["percent_eosinophil_infiltration"] = sample["percent_eosinophil_infiltration"]
-			# if "percent_inflam_infiltration" in sample:
-			#     patient["slides"]["percent_inflam_infiltration"] = sample["percent_inflam_infiltration"]
 			if "percent_neutrophil_infiltration" in sample:
 				patient["slides"]["percent_neutrophil_infiltration"] = sample["percent_neutrophil_infiltration"]
 			if "percent_lymphocyte_infiltration" in sample:
 				patient["slides"]["percent_lymphocyte_infiltration"] = sample["percent_lymphocyte_infiltration"]
-			# if "percent_granulocyte_infiltration" in sample:
-			#     patient["slides"]["percent_granulocyte_infiltration"] = sample["percent_granulocyte_infiltration"]
 			if "percent_necrosis" in sample:
 				patient["slides"]["percent_necrosis"] = sample["percent_necrosis"]
 			if "percent_normal_cells" in sample:

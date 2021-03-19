@@ -48,18 +48,22 @@ def classify_tile(arguments):
 
 
 def slice_image_parallel2(slide_path: openslide, tile_size_: int, level: int, tissue_threshold_percentage: int, output_folder: str):
-	slide_ = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=tile_size_, overlap=1)
+	try:
+		slide_ = deepzoom.DeepZoomGenerator(openslide.OpenSlide(slide_path), tile_size=tile_size_, overlap=0)
+	except openslide.lowlevel.OpenSlideUnsupportedFormatError:
+		print("svs too large, resolution too high" + slide_path)
+		return
 	tiles_info_per_level = slide_.level_tiles
 	number_of_levels = len(tiles_info_per_level)
 	number_of_widths, number_of_heights = tiles_info_per_level[level]
-	print(f"level dimensions: {slide.level_dimensions}")
+	# print(f"level dimensions: {slide.level_dimensions}")
 	# print(f"tile dimensions: {slide.get_tile_dimensions(level, (29,0))}")
-	print(f"Number of widths: {number_of_widths}")
-	print(f"Number of heights: {number_of_heights}")
-	print(f"number of levels: {number_of_levels}")
+	# print(f"Number of widths: {number_of_widths}")
+	# print(f"Number of heights: {number_of_heights}")
+	# print(f"number of levels: {number_of_levels}")
 	counter = 0
 	total_slides = number_of_heights * number_of_widths
-	print(f"total slides: {total_slides}")
+	# print(f"total slides: {total_slides}")
 	jobs_instructions = list()
 	for width_index in range(number_of_widths):
 		# width = width_index * tile_size_
@@ -82,27 +86,27 @@ def classify_tile2(arguments):
 	tile = slide.get_tile(level, (x,y))
 	tile_dimensions = slide.get_tile_dimensions(level, (x, y))
 	if tile_dimensions == (tile_size, tile_size):
-		print(f"tile {tile_number} dimensions: {tile_dimensions}")
+		# print(f"tile {tile_number} dimensions: {tile_dimensions}")
 		tissue_percentage = calculate_tissue_percentage(tile)
 		if tissue_percentage > tissue_threshold_percentage:
 			tile.save(os.path.join(output_folder, f"tile{tile_number}.png"))
 
 
-# sample_image_path: str = '71208712-2893-4404-9cef-ff090774d057/71208712-2893-4404-9cef-ff090774d057.svs'
-sample_image_path: str = './71208712-2893-4404-9cef-ff090774d057.svs'
+# sample_image_path: str = '1208712-2893-4404-9cef-ff090774d057.svs'
+sample_image_path: str = './12b4ab45-c1dc-453f-a4b0-0a52baaf0afe.svs'
 
 
-sample_image_path: str = './slides/2774b738-3f6c-420a-aa1e-f7fcf527097a.svs'
-tile_size=1000
+# sample_image_path: str = './slides/2774b738-3f6c-420a-aa1e-f7fcf527097a.svs'
+tile_size=1024
 
 # explore image to find out how many levels there are, and decide which is best to use. Once decided, the code below can be commented out
-slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(sample_image_path), tile_size=tile_size, overlap=1)
-level_dimensions = slide.level_dimensions
-number_of_levels = len(level_dimensions)
-print(f"level image dimensions: {level_dimensions}")
-print(f"number of levels: {number_of_levels} ")
-print(f'Highest quality level: {number_of_levels - 1}')
-print(f'Lowest quality level: {0}')
+# slide = deepzoom.DeepZoomGenerator(openslide.OpenSlide(sample_image_path), tile_size=tile_size, overlap=0)
+# level_dimensions = slide.level_dimensions
+# number_of_levels = len(level_dimensions)
+# print(f"level image dimensions: {level_dimensions}")
+# print(f"number of levels: {number_of_levels} ")
+# print(f'Highest quality level: {number_of_levels - 1}')
+# print(f'Lowest quality level: {0}')
 
 # perform slicing
 slice_image_parallel2(sample_image_path, tile_size, 14, 50, 'tiles')

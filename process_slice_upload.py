@@ -73,7 +73,7 @@ def classify_tile_rclone(arguments):
             # tile.save(os.path.join(output_folder, f"tile{tile_number}.png"))
             tile.save(temporary_file, "png")
             # print(path_to_upload)
-            subprocess.run(["rclone", "copyto", temporary_file.name,
+            subprocess.run(["rclone", "copyto", temporary_file.name, #"rgoyalLab:/tmp/GCDData_/{path_to_upload}{file_id}_{tile_number}.png", "-q", "--transfers=16"])
                             f"GCDData:/FinalData_/{path_to_upload}{file_id}_{tile_number}.png", "-q", "--transfers=1"])
 
 def fetch_slides(slides_path):

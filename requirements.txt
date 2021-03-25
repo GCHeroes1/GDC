@@ -21,10 +21,12 @@ six==1.15.0
 urllib3==1.25.11
 Werkzeug==1.0.1
 pydrive
-python-rclone
 tqdm
 torch
 opencv-python
 torchvision
 django-deepzoom
 imageio
+tensorflow_gpu==1.4.0
+Scipy
+h5py==2.10.0

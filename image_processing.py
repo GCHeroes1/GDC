@@ -5,15 +5,14 @@ import numpy as np
 
 # NOTE: Before starting, use "download_slides.py" to download an svs image
 
-# SET TISSUE PIXELS AS BLACK, RETURNS NEW IMAGE
-def label_non_whitespace(img):
-	img = img.copy().convert("L")  # convert to greyscale
-	for x in range(img.width):
-		for y in range(img.height):
-			if (img.getpixel((x, y)) < 210):  # threshold value can be played around with
-				img.putpixel((x, y), 0)
-	return img
-
+# # SET TISSUE PIXELS AS BLACK, RETURNS NEW IMAGE
+# def label_non_whitespace(img):
+# 	img = img.copy().convert("L")  # convert to greyscale
+# 	for x in range(img.width):
+# 		for y in range(img.height):
+# 			if (img.getpixel((x, y)) < 210):  # threshold value can be played around with
+# 				img.putpixel((x, y), 0)
+# 	return img
 
 # threshold (optional) for pixels number of pixels that should be tissue
 def calculate_tissue_percentage(img):

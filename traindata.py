@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import numpy as np
-import torch
+# import torch
 import random
 from PIL import Image
 import os
@@ -21,14 +21,13 @@ from tensorflow import keras
 
 
 np.random.seed(0)
-torch.cuda.empty_cache()
-torch.manual_seed(0)
+# torch.cuda.empty_cache()
+# torch.manual_seed(0)
 random.seed(0)
 
-
-#blaze
+# blaze
 root_dir = "/scratch0/NOT_BACKED_UP/tmp/GCDData/"
-#not blaze
+# not blaze
 # root_dir = "/tmp/GCDData/"
 
 im = Image.open(f"{root_dir}skin_train_dir/late/00ded484-9e77-4242-96a3-b09996fd0231_11.png")
@@ -43,9 +42,10 @@ lymph_validation_dir = f"{root_dir}lymph_validation_dir"
 train_datagen = ImageDataGenerator()
 test_datagen = ImageDataGenerator()
 
-b_s = 1 #batch_size
+b_s = 1 # batch_size
 len_train = len(os.listdir(lymph_train_dir + "/early")) + len(os.listdir(lymph_train_dir + "/late"))
 validation_steps = len(os.listdir(lymph_validation_dir + "/early")) + len(os.listdir(lymph_validation_dir + "/late"))//b_s
+print(f"Validation steps: {validation_steps}")
 # len_train
 s_s = len_train//b_s
 print("Batch size: " + str(b_s))
@@ -73,6 +73,6 @@ print("model compiled")
 inc_history = model.fit_generator(train_generator, validation_data = validation_generator, steps_per_epoch = s_s, epochs = 10, validation_steps=validation_steps)
 print("model trained")
 
-model.save("/scratch0/NOT_BACKED_UP/tmp/GCDModelLymph")
+model.save("/scratch0/NOT_BACKED_UP/tmp/GPUModelLymph_1_64")
 
 # model = keras.models.load_model('model')

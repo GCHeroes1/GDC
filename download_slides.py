@@ -36,8 +36,6 @@ def download_slide(file_id):
     if not os.path.exists("./_tmp"):
         os.makedirs("./_tmp")
     temporary_file = tempfile.NamedTemporaryFile(dir="./_tmp")
-    # output_path = f"slides/{hit_id}/{file_id}/"
-    # Path(output_path).mkdir(parents=True, exist_ok=True)  # create folders if they don't exist
 
     r = requests.get(endpoint + file_id, stream=True)
     total_length = r.headers.get('content-length')
@@ -57,15 +55,6 @@ def download_and_upload(file_id):
 
     subprocess.run(["rclone", "copyto", slide_file.name, f"GCDData:/Data/{file_id}.svs", "-q", "--transfers=1"])
     slide_file.close()
-
-    # if agesurvived < 3:
-    #       if rng within 80%:
-    #           upload to "GCDData:/Data2/Classifier1/training
-    #       else:
-    #           upload to "GCDData:/Data2/Classifier1/validation
-    # else:
-    #       if rng within 80%:
-    #           upload to "GCDData:/Data2/Classifier2/training
 
 
 if __name__ == "__main__":
